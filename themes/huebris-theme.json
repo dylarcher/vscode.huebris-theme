@@ -1,0 +1,9 @@
+{
+	"$schema": "color-theme.schema.json",
+	"name": "Huebris Theme: Flat",
+	"version": "0.1.0",
+	"type": { "light": true, "flat": true },
+	"colors": {},
+	"tokenColors": []
+}
+

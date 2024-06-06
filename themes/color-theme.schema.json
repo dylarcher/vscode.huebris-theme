@@ -1,0 +1,30 @@
+{
+	"type": "object",
+	"allowComments": true,
+	"allowTrailingCommas": true,
+	"properties": {
+		"colors": {
+			"description": "Workbench colors.",
+			"$ref": "vscode://schemas/workbench-colors",
+			"additionalProperties": false
+		},
+		"tokenColors": {
+			"anyOf": [
+				{ "type": "string", "description": "Relative theme file path." },
+				{
+					"description": "Syntax highlighting color."      ,
+					"$ref"       : "vscode://schemas/textmate-colors"
+				}
+			]
+		},
+		"semanticHighlighting": {
+			"type"       : "boolean"                               ,
+			"description": "Enable semantic highlighting in theme."
+		},
+		"semanticTokenColors": {
+			"type"       : "object"                        ,
+			"description": "Semantic token color."         ,
+			"$ref"       : "vscode://schemas/token-styling"
+		}
+	}
+}

@@ -1,0 +1,9 @@
+{
+	"$schema": "color-theme.schema.json",
+	"name": "Huebris Theme: Outlined",
+	"version": "0.1.0",
+	"type": { "light": true, "outlined": true },
+	"colors": {},
+	"tokenColors": []
+}
+
