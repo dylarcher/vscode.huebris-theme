@@ -2,3 +2,12 @@
 .vscode-test/**
 .gitignore
 vsc-extension-quickstart.md
+
+# Common ignores
+.git/**
+node_modules/**
+*.vsix
+*.zip
+.DS_Store
+Thumbs.db
+bin/**
