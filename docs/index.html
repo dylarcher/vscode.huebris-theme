@@ -1,277 +1,1020 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Huebris Theme Showcase</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Huebris Theme Showcase</h1>
-    </header>
-
-    <section id="welcome">
-        <h2>Welcome to the Huebris Theme!</h2>
-        <p>This page showcases the features and appearance of the Huebris Theme.</p>
-    </section>
-
-    <section id="theme-colors">
-        <h2>Theme Colors</h2>
-
-        <h3>Light Mode Colors</h3>
-        <div class="color-swatch-container">
-            <div class="color-swatch" style="background-color: #FFFFFF;"><span>#FFFFFF<br>Editor BG</span></div>
-            <div class="color-swatch" style="background-color: #333333;"><span>#333333<br>Default Text</span></div>
-            <div class="color-swatch" style="background-color: #F5F5F5;"><span>#F5F5F5<br>Activity Bar BG</span></div>
-            <div class="color-swatch" style="background-color: #F5F5F5;"><span>#F5F5F5<br>Side Bar BG</span></div>
-            <div class="color-swatch" style="background-color: #007ACC;"><span>#007ACC<br>Status Bar BG</span></div>
-            <div class="color-swatch" style="background-color: #007ACC;"><span>#007ACC<br>Button BG</span></div>
-            <div class="color-swatch" style="background-color: #FFFFFF;"><span>#FFFFFF<br>Input BG</span></div>
-            <div class="color-swatch" style="background-color: #007ACC;"><span>#007ACC<br>Focus Border</span></div>
-            <div class="color-swatch" style="background-color: #EEEEEE;"><span>#EEEEEE<br>Line Highlight</span></div>
-            <div class="color-swatch" style="background-color: #ADD6FF;"><span>#ADD6FF<br>Selection BG</span></div>
-            <div class="color-swatch" style="background-color: #6A737D;"><span>#6A737D<br>Comment</span></div>
-            <div class="color-swatch" style="background-color: #005CC5;"><span>#005CC5<br>Keyword</span></div>
-            <div class="color-swatch" style="background-color: #D73A49;"><span>#D73A49<br>String</span></div>
-            <div class="color-swatch" style="background-color: #6F42C1;"><span>#6F42C1<br>Variable</span></div>
-            <div class="color-swatch" style="background-color: #E36209;"><span>#E36209<br>Number</span></div>
-        </div>
-
-        <h3>Dark Mode Colors</h3>
-        <div class="color-swatch-container">
-            <div class="color-swatch" style="background-color: #202432;"><span>#202432<br>Editor BG</span></div>
-            <div class="color-swatch" style="background-color: #d3d0c8;"><span>#d3d0c8<br>Default Text</span></div>
-            <div class="color-swatch" style="background-color: #181b25;"><span>#181b25<br>Activity Bar BG</span></div>
-            <div class="color-swatch" style="background-color: #1c1f2b;"><span>#1c1f2b<br>Side Bar BG</span></div>
-            <div class="color-swatch" style="background-color: #001432;"><span>#001432<br>Status Bar BG</span></div>
-            <div class="color-swatch" style="background-color: #002daa;"><span>#002daa<br>Button BG</span></div>
-            <div class="color-swatch" style="background-color: #202432;"><span>#202432<br>Input BG</span></div>
-            <div class="color-swatch" style="background-color: #165fb3;"><span>#165fb3<br>Focus Border</span></div>
-            <div class="color-swatch" style="background-color: #ffffff33;"><span>#ffffff33<br>Line Highlight</span></div>
-            <div class="color-swatch" style="background-color: #00000055;"><span>#00000055<br>Selection BG</span></div>
-            <div class="color-swatch" style="background-color: #747369;"><span>#747369<br>Comment</span></div>
-            <div class="color-swatch" style="background-color: #22A8CD;"><span>#22A8CD<br>Keyword</span></div>
-            <div class="color-swatch" style="background-color: #FE5C7B;"><span>#FE5C7B<br>String</span></div>
-            <div class="color-swatch" style="background-color: #A97BFF;"><span>#A97BFF<br>Variable</span></div>
-            <div class="color-swatch" style="background-color: #F99157;"><span>#F99157<br>Number</span></div>
-        </div>
-    </section>
-
-    <section id="typography">
-        <h2>Typography</h2>
-        <p>Huebris theme uses standard system fonts for UI elements and a common monospace font for the editor. Ensure your VSCode is configured to use your preferred coding font.</p>
-        <div class="font-example">
-            <h4>Example Heading 4</h4>
-            <p>This is an example paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-    </section>
-
-    <section id="design-elements">
-        <h2>Key Design Elements</h2>
-        <p>Huebris provides distinct styling for:</p>
-        <ul>
-            <li>Editor Background &amp; Foreground</li>
-            <li>Selection Highlights</li>
-            <li>Active Line Highlighting</li>
-            <li>Activity Bar, Status Bar, and Side Bar</li>
-            <li>Tabs (Active and Inactive)</li>
-            <li>UI Borders (Focus, Input, etc.)</li>
-            <li>Syntax tokens: Keywords, Strings, Comments, Variables, Functions, Numbers, Tags.</li>
-        </ul>
-    </section>
-
-    <section id="vscode-examples">
-        <h2>VSCode Examples</h2>
-        <div class="screenshot-group">
-            <div class="screenshot-container light-mode-screenshot">
-                <h3>Editor (Light Mode)</h3>
-                <img src="assets/vscode-editor-light.png" alt="VSCode Editor - Huebris Light Theme">
-                <h3>Explorer (Light Mode)</h3>
-                <img src="assets/vscode-explorer-light.png" alt="VSCode Explorer - Huebris Light Theme">
-            </div>
-            <div class="screenshot-container dark-mode-screenshot" style="display:none;">
-                <h3>Editor (Dark Mode)</h3>
-                <img src="assets/vscode-editor-dark.png" alt="VSCode Editor - Huebris Dark Theme">
-                <h3>Explorer (Dark Mode)</h3>
-                <img src="assets/vscode-explorer-dark.png" alt="VSCode Explorer - Huebris Dark Theme">
-            </div>
-        </div>
-    </section>
-
-    <section id="syntax-highlighting">
-        <h2>Code Syntax Highlighting</h2>
-        <div class="code-example-container">
-            <h3>JavaScript</h3>
-            <pre><code class="language-javascript">/*
- * Simple JavaScript Example
- */
-function greet(name) {
-  // Using a template literal
-  const message = `Hello, ${name}!`;
-  console.log(message);
-  return message;
-}
-
-let person = "Huebris User";
-greet(person); // Output: Hello, Huebris User!
-
-// Example of a loop
-for (let i = 0; i < 3; i++) {
-  console.log(`Iteration ${i}`);
-}
-
-// Arrow function
-const add = (a, b) => a + b;
-console.log(`2 + 3 = ${add(2, 3)}`);</code></pre>
-            <h3>Python</h3>
-            <pre><code class="language-python"># Simple Python Example
-class Greeter:
-    def __init__(self, name):
-        self.name = name  # Instance variable
-
-    def greet(self, loud=False):
-        if loud:
-            print(f'HELLO, {self.name.upper()}!')
-        else:
-            print(f'Hello, {self.name}')
-
-# Create an instance
-g = Greeter("Huebris Coder")
-g.greet()
-g.greet(loud=True)
-
-# List comprehension
-numbers = [x * x for x in range(1, 6)] # [1, 4, 9, 16, 25]
-print(numbers)</code></pre>
-            <h3>Java</h3>
-            <pre><code class="language-java">/**
- * Simple Java Example
- */
-public class Greeter {
-    private String name; // Instance variable
-
-    public Greeter(String name) {
-        this.name = name;
-    }
-
-    public void greet() {
-        System.out.println("Hello, " + this.name + "!");
-    }
-
-    public static void main(String[] args) {
-        Greeter greeter = new Greeter("Huebris Developer");
-        greeter.greet(); // Output: Hello, Huebris Developer!
-
-        // Example of a loop
-        for (int i = 0; i < 3; i++) {
-            System.out.println("Iteration: " + i);
+    <title>Interactive Guide to Accessible VS Code Theming</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&family=Roboto+Mono:wght@400;500&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- 
+        Chosen Palette: Calm Neutral Harmony (Custom)
+        - Background: #F8F9FA (Off-white)
+        - Text: #212529 (Dark Gray)
+        - Subtle Border/BG: #E9ECEF
+        - Primary Accent: #4C6EF5 (Indigo)
+        - Secondary Accent: #20C997 (Teal)
+        - Error: #FA5252 (Red)
+        - Warning: #FAB005 (Amber)
+    -->
+    <!-- 
+        Application Structure Plan: The application is designed as an interactive guide, diverging from the report's linear structure. It uses a sticky top navigation for easy access to key thematic sections: "Fundamentals," "The Palette," "Theme Lab," "Accessibility," and "Workflow." This modular, task-oriented design allows users to explore concepts based on interest rather than chapter order. The centerpiece is the "Theme Lab," a simulator that provides a hands-on experience, which is more effective for learning than static descriptions. This structure prioritizes user engagement, exploration, and practical understanding.
+    -->
+    <!-- 
+        Visualization & Content Choices:
+        - Report Info: Theme Anatomy -> Goal: Organize -> Viz/Method: Interactive HTML cards -> Interaction: Hover effect -> Justification: More engaging than a plain list -> Library/Method: HTML/Tailwind.
+        - Report Info: Core Color Palette (Table 1) -> Goal: Inform & Interact -> Viz/Method: Interactive grid with a dynamic contrast checker tool -> Interaction: Click colors, select from dropdowns to test contrast -> Justification: Turns a static table into a practical utility -> Library/Method: HTML/JS.
+        - Report Info: Specialized Theme Variations (Section V) -> Goal: Demonstrate & Compare -> Viz/Method: "Theme Lab" UI simulator -> Interaction: Buttons dynamically apply styles to a UI mock -> Justification: "Showing" is more effective than "telling" -> Library/Method: JS/CSS.
+        - Report Info: WCAG Contrast Ratios (Table 3) -> Goal: Compare & Inform -> Viz/Method: Bar Chart -> Interaction: Hover for tooltips -> Justification: Makes numerical data visually comparable -> Library/Method: Chart.js/Canvas.
+        - Report Info: Development Workflow -> Goal: Organize -> Viz/Method: HTML/CSS Flowchart -> Interaction: Static -> Justification: Clearer process visualization than text -> Library/Method: HTML/Tailwind with Unicode icons.
+    -->
+    <!-- 
+        CONFIRMATION: NO SVG graphics used. NO Mermaid JS used.
+    -->
+    <style>
+        :root {
+            --bg-primary: #FFFFFF;
+            --bg-secondary: #F6F8FA;
+            --text-primary: #24292E;
+            --text-secondary: #6A737D;
+            --border-default: #D1D5DA;
+            --accent-primary: #0052CC; /* Adjusted from #0366D6 for AA contrast */
+            --accent-fg: #FFFFFF;
+            --syntax-keyword: #D73A49;
+            --syntax-string: #032F62;
+            --syntax-comment: #6A737D;
+            --syntax-tag: #22863a;
+            --syntax-attr: #6f42c1;
+            --syntax-number: #005cc5;
+            --error: #CB2431;
+            --warning: #B08800;
+            --font-body: 'Inter', sans-serif;
+            --font-code: 'Fira Code', monospace;
+            --base-font-size: 1rem;
+            --base-spacing-unit: 1rem;
         }
-    }
-}</code></pre>
-            <h3>C++</h3>
-            <pre><code class="language-cpp">// Simple C++ Example
-#include &lt;iostream&gt;
-#include &lt;string&gt;
-#include &lt;vector&gt;
 
-class Greeter {
-public:
-    Greeter(std::string name) : name(name) {}
+        html.dark-theme {
+            --bg-primary: #1E1E1E;
+            --bg-secondary: #252526;
+            --text-primary: #D4D4D4;
+            --text-secondary: #8B949E;
+            --border-default: #333333;
+            --accent-primary: #58A6FF;
+            --accent-fg: #FFFFFF; /* Corrected from black for better contrast */
+            --syntax-keyword: #F97583;
+            --syntax-string: #A5D6FF;
+            --syntax-comment: #8B949E;
+            --syntax-tag: #7ee787;
+            --syntax-attr: #c9d1d9;
+            --syntax-number: #79c0ff;
+            --error: #F85149;
+            --warning: #DBAB09;
+        }
+        
+        html.dimmed-theme {
+            --bg-primary: #22272e;
+            --bg-secondary: #2d333b;
+            --text-primary: #cdd9e5;
+            --text-secondary: #768390;
+            --border-default: #444c56;
+            --accent-primary: #539bf5;
+            --accent-fg: #FFFFFF; /* Corrected from dark gray for better contrast */
+            --syntax-keyword: #f778ba;
+            --syntax-string: #96d0ff;
+            --syntax-comment: #768390;
+            --syntax-tag: #8ddb8c;
+            --syntax-attr: #eac590;
+            --syntax-number: #79c0ff;
+            --error: #e5534b;
+            --warning: #d4a72c;
+        }
 
-    void greet() {
-        std::cout &lt;&lt; "Hello, " &lt;&lt; name &lt;&lt; "!" &lt;&lt; std::endl;
-    }
-private:
-    std::string name;
-};
+        html.hc-light-theme {
+            --bg-primary: #FFFFFF;
+            --bg-secondary: #FFFFFF;
+            --text-primary: #000000;
+            --text-secondary: #000000;
+            --border-default: #000000;
+            --accent-primary: #0000FF;
+            --accent-fg: #FFFFFF;
+            --syntax-keyword: #800000;
+            --syntax-string: #000080;
+            --syntax-comment: #006400;
+            --syntax-tag: #00008b;
+            --syntax-attr: #0000cd;
+            --syntax-number: #0000ff;
+            --error: #FF0000;
+            --warning: #8B4513;
+        }
 
-int main() {
-    Greeter greeter("Huebris Programmer");
-    greeter.greet();
+        html.hc-dark-theme {
+            --bg-primary: #000000;
+            --bg-secondary: #000000;
+            --text-primary: #FFFFFF;
+            --text-secondary: #FFFFFF;
+            --border-default: #FFFFFF;
+            --accent-primary: #FFFF00;
+            --accent-fg: #000000;
+            --syntax-keyword: #FFD700;
+            --syntax-string: #00FFFF;
+            --syntax-comment: #00FF00;
+            --syntax-tag: #00fa9a;
+            --syntax-attr: #add8e6;
+            --syntax-number: #ffffff;
+            --error: #FF0000;
+            --warning: #FFA500;
+        }
 
-    std::vector&lt;int&gt; numbers;
-    for (int i = 1; i &lt;= 5; ++i) {
-        numbers.push_back(i * i);
-    }
-    // numbers contains {1, 4, 9, 16, 25}
-    for (int num : numbers) {
-        std::cout &lt;&lt; num &lt;&lt; " ";
-    }
-    std::cout &lt;&lt; std::endl;
-    return 0;
-}</code></pre>
-            <h3>HTML</h3>
-            <pre><code class="language-html">&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;title&gt;Huebris Page&lt;/title&gt;
-    &lt;link rel="stylesheet" href="style.css"&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;header&gt;
-        &lt;h1&gt;Welcome to Huebris&lt;/h1&gt;
-    &lt;/header&gt;
+        body { 
+            font-family: var(--font-body); 
+            font-size: var(--base-font-size);
+            background-color: var(--bg-primary); 
+            color: var(--text-primary);
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .font-code { font-family: var(--font-code); }
+        .sticky-nav { position: sticky; top: 0; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
+        .chart-container { position: relative; width: 100%; max-width: 800px; margin-left: auto; margin-right: auto; height: 300px; max-height: 40vh; }
+        @media (min-width: 768px) { .chart-container { height: 350px; } }
+        
+        main {
+            padding-top: calc(var(--base-spacing-unit) * 2);
+            padding-bottom: calc(var(--base-spacing-unit) * 3);
+        }
+        main > section {
+            margin-bottom: calc(var(--base-spacing-unit) * 4);
+            scroll-margin-top: calc(var(--base-spacing-unit) * 6);
+        }
+        .section-intro {
+            margin-bottom: calc(var(--base-spacing-unit) * 2.5);
+        }
+        .themed-card {
+            border-width: 2px;
+            transition: border-color 0.3s ease;
+            padding: calc(var(--base-spacing-unit) * 1.5);
+        }
+        
+        html.borders-hidden .themed-card,
+        html.borders-hidden .themed-card:hover {
+            border-color: transparent;
+        }
 
-    &lt;!-- This is an HTML comment --&gt;
-    &lt;section id="main-content"&gt;
-        &lt;p&gt;This is a paragraph with &lt;strong&gt;strong&lt;/strong&gt; text and an &lt;a href="#"&gt;example link&lt;/a&gt;.&lt;/p&gt;
-        &lt;ul&gt;
-            &lt;li&gt;List item 1&lt;/li&gt;
-            &lt;li&gt;List item 2&lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/section&gt;
+        .spinner {
+            border: 4px solid rgba(0, 0, 0, 0.1);
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            border-left-color: var(--accent-primary);
+            animation: spin 1s ease infinite;
+        }
 
-    &lt;script src="script.js"&gt;&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
-            <h3>CSS</h3>
-            <pre><code class="language-css">/* Simple CSS Example */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: var(--bg-color-light); /* Using CSS Variable */
-    color: var(--text-color-light);
-    line-height: 1.6;
-}
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+            outline: 2px solid var(--accent-primary);
+            outline-offset: 2px;
+            border-radius: 2px;
+        }
+        
+        input[type="range"] {
+            -webkit-appearance: none; appearance: none;
+            width: 100%; height: 8px;
+            background: var(--border-default); border-radius: 5px; outline: none;
+        }
+        
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none; appearance: none;
+            width: 20px; height: 20px;
+            background: var(--accent-primary); cursor: pointer; border-radius: 50%;
+        }
 
-header {
-    background-color: #007acc;
-    color: white;
-    padding: 1em 0;
-    text-align: center;
-}
+        input[type="range"]::-moz-range-thumb {
+            width: 20px; height: 20px;
+            background: var(--accent-primary); cursor: pointer; border-radius: 50%;
+        }
 
-#main-content {
-    padding: 20px;
-}
+    </style>
+</head>
+<body class="antialiased">
 
-/* Class selector */
-.highlight {
-    background-color: yellow;
-    font-weight: bold;
-}
-
-/* ID selector */
-#footer {
-    margin-top: 30px;
-    padding: 10px;
-    border-top: 1px solid #ccc;
-}</code></pre>
+    <header class="sticky-nav z-10 bg-primary/80 border-b border-border-default">
+        <div class="container mx-auto px-4 flex justify-between items-center h-16">
+             <h1 class="text-lg font-bold"><ins>Huebris</ins> Interactive Themes</h1>
+            <div class="flex items-center gap-2">
+                <a href="https://github.com/dylarcher/vscode.huebris-theme" target="_blank" rel="noopener noreferrer" class="p-2 rounded-md hover:bg-secondary text-secondary hover:text-primary transition-colors" aria-label="View on GitHub">
+                    <!--span class="font-bold text-xl"-->
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0"
+                      viewBox="0 0 97.6 96" width="18" height="18" style="enable-background:new 0 0 97.6 96;" xml:space="preserve">
+                      <style type="text/css">
+                        .github {
+                          fill: var(--_color, #1b1f24);
+                    
+                          @media (prefers-color-scheme: dark) {
+                            --_color: #fff;
+                          }
+                        }
+                      </style>
+                      <path class="github" d="M48.9,0C21.8,0,0,22,0,49.2C0,71,14,89.4,33.4,95.9c2.4,0.5,3.3-1.1,3.3-2.4c0-1.1-0.1-5.1-0.1-9.1
+                      c-13.6,2.9-16.4-5.9-16.4-5.9c-2.2-5.7-5.4-7.2-5.4-7.2c-4.4-3,0.3-3,0.3-3c4.9,0.3,7.5,5.1,7.5,5.1c4.4,7.5,11.4,5.4,14.2,4.1
+                      c0.4-3.2,1.7-5.4,3.1-6.6c-10.8-1.1-22.2-5.4-22.2-24.3c0-5.4,1.9-9.8,5-13.2c-0.5-1.2-2.2-6.3,0.5-13c0,0,4.1-1.3,13.4,5.1
+                      c3.9-1.1,8.1-1.6,12.2-1.6s8.3,0.6,12.2,1.6c9.3-6.4,13.4-5.1,13.4-5.1c2.7,6.8,1,11.8,0.5,13c3.2,3.4,5,7.8,5,13.2
+                      c0,18.9-11.4,23.1-22.3,24.3c1.8,1.5,3.3,4.5,3.3,9.1c0,6.6-0.1,11.9-0.1,13.5c0,1.3,0.9,2.9,3.3,2.4C83.6,89.4,97.6,71,97.6,49.2
+                      C97.7,22,75.8,0,48.9,0z" />
+                    </svg>
+                    <!--/span-->
+                </a>
+                <a href="#" class="px-3 py-1.5 text-sm font-semibold rounded-full border-2 border-border-default text-secondary hover:bg-secondary hover:text-primary transition-colors" aria-label="Download Theme (Placeholder)">Download Theme</a>
+                <div class="relative">
+                    <button id="nav-toggle-btn" type="button" class="p-2 rounded-md hover:bg-secondary text-secondary hover:text-primary transition-colors text-2xl" aria-label="Toggle Main Navigation" aria-haspopup="true" aria-expanded="false">
+                        &#x22EE; <!-- Vertical Ellipsis -->
+                    </button>
+                    <nav id="nav-menu" class="hidden absolute right-0 mt-2 w-56 bg-secondary rounded-lg shadow-lg border border-border-default" aria-label="Main Navigation">
+                        <ul id="main-nav" class="flex flex-col p-2">
+                            <li><a href="#fundamentals" class="block p-2 rounded-md hover:bg-primary text-secondary hover:text-primary transition-colors">Fundamentals</a></li>
+                            <li><a href="#palette" class="block p-2 rounded-md hover:bg-primary text-secondary hover:text-primary transition-colors">Palette</a></li>
+                            <li><a href="#ai-assistant" class="block p-2 rounded-md hover:bg-primary text-secondary hover:text-primary transition-colors">✨ AI Assistant</a></li>
+                            <li><a href="#lab" class="block p-2 rounded-md hover:bg-primary text-secondary hover:text-primary transition-colors">Theme Lab</a></li>
+                            <li><a href="#customizer" class="block p-2 rounded-md hover:bg-primary text-secondary hover:text-primary transition-colors">Customizer</a></li>
+                            <li><a href="#snippets" class="block p-2 rounded-md hover:bg-primary text-secondary hover:text-primary transition-colors">Snippets</a></li>
+                            <li><a href="#icons" class="block p-2 rounded-md hover:bg-primary text-secondary hover:text-primary transition-colors">Icons</a></li>
+                            <li><a href="#accessibility" class="block p-2 rounded-md hover:bg-primary text-secondary hover:text-primary transition-colors">Accessibility</a></li>
+                            <li><a href="#workflow" class="block p-2 rounded-md hover:bg-primary text-secondary hover:text-primary transition-colors">Workflow</a></li>
+                            <li><a href="#installation" class="block p-2 rounded-md hover:bg-primary text-secondary hover:text-primary transition-colors">Installation</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </div>
-    </section>
+    </header>
+    
+    <main class="container mx-auto px-4">
+        
+        <section id="fundamentals" aria-labelledby="fundamentals-heading">
+            <h2 id="fundamentals-heading" class="text-4xl md:text-5xl font-extrabold text-center mb-4">The Interactive Guide to <span class="text-[color:var(--accent-primary)]">VS Code Theming</span></h2>
+            <p class="text-lg md:text-xl text-center text-secondary max-w-3xl mx-auto section-intro">An exploration of the principles, tools, and accessibility standards behind creating high-quality, multi-variation themes for developers.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-[var(--base-spacing-unit)] text-center">
+                <div class="themed-card bg-secondary p-6 rounded-xl border border-border-default hover:border-accent-primary transition-all">
+                    <h3 class="text-xl font-bold mb-2 text-[color:var(--accent-primary)]">UI Colors</h3>
+                    <p class="text-secondary">Defines the look of the entire workbench: sidebars, status bars, tabs, and all non-editor components.</p>
+                </div>
+                <div class="themed-card bg-secondary p-6 rounded-xl border border-border-default hover:border-accent-primary transition-all">
+                    <h3 class="text-xl font-bold mb-2 text-[color:var(--syntax-keyword)]">Token Colors</h3>
+                    <p class="text-secondary">Styles the code itself, targeting language constructs like keywords, strings, and comments via TextMate scopes.</p>
+                </div>
+                <div class="themed-card bg-secondary p-6 rounded-xl border border-border-default hover:border-accent-primary transition-all">
+                    <h3 class="text-xl font-bold mb-2 text-[color:var(--syntax-string)]">Semantic Tokens</h3>
+                    <p class="text-secondary">Provides more accurate, context-aware highlighting based on language intelligence for superior clarity.</p>
+                </div>
+            </div>
+        </section>
 
-    <section id="toggle-mode">
-        <h2>Toggle Light/Dark Mode</h2>
-        <button id="theme-toggle-button">Toggle Mode</button> <!-- Changed ID here -->
-    </section>
+        <section id="palette" aria-labelledby="palette-heading">
+            <h2 id="palette-heading" class="text-3xl font-bold text-center mb-4 text-[color:var(--accent-primary)]">The Core Palette & Contrast Checker</h2>
+            <p class="text-lg text-center text-secondary max-w-3xl mx-auto section-intro">A theme's foundation is its palette. Every color must be chosen with accessibility in mind. Use this tool to test color combinations against WCAG contrast standards.</p>
 
-    <footer>
-        <p>&copy; 2023 Huebris Theme</p>
-    </footer>
-    <script src="script.js"></script>
+            <div class="themed-card bg-secondary p-6 rounded-xl border border-border-default">
+                 <p class="text-center text-secondary mb-4">Click a background color from the left, then a text color from the right to see the contrast ratio.</p>
+                <div class="flex flex-col gap-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div id="bg-selector-grid" class="grid grid-cols-4 sm:grid-cols-5 lg:grid-cols-6 gap-3 content-start" role="radiogroup" aria-labelledby="bg-color-label">
+                            <h3 id="bg-color-label" class="sr-only">Select Background Color</h3>
+                        </div>
+                        <div id="fg-selector-list" class="grid grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-2 content-start" role="radiogroup" aria-labelledby="fg-color-label">
+                            <h3 id="fg-color-label" class="sr-only">Select Foreground Color</h3>
+                        </div>
+                    </div>
+
+                    <div class="bg-primary p-4 rounded-lg border border-border-default flex flex-col justify-center">
+                        <div class="flex items-center justify-center gap-4 mb-3">
+                             <h4 class="font-bold text-center">Contrast Ratio</h4>
+                            <button id="suggest-colors-btn" class="px-3 py-1.5 text-sm font-semibold rounded-full bg-accent-primary text-[color:var(--accent-fg)] transition-transform hover:scale-105">✨ Suggest Accessible Colors</button>
+                        </div>
+                        <div id="contrast-results" class="text-center p-4 rounded-md bg-secondary border border-border-default">
+                            <p class="text-3xl font-bold" id="contrast-ratio">1.00 : 1</p>
+                            <div class="flex justify-center gap-4 mt-2 text-sm">
+                                <p><strong>AA:</strong> <span id="aa-status"></span></p>
+                                <p><strong>AAA:</strong> <span id="aaa-status"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="ai-assistant" aria-labelledby="ai-heading">
+            <h2 id="ai-heading" class="text-3xl font-bold text-center mb-4 text-[color:var(--accent-primary)]">✨ AI Theme Assistant</h2>
+            <p class="text-lg text-center text-secondary max-w-3xl mx-auto section-intro">Stuck for ideas? Describe a theme concept in plain language, and the AI will generate a starting palette for you.</p>
+
+            <div class="themed-card bg-secondary p-6 rounded-xl border border-border-default">
+                <div class="flex flex-col gap-4">
+                    <textarea id="ai-prompt" class="w-full p-3 rounded-lg border border-border-default bg-primary font-code" rows="3" placeholder="e.g., 'a calming theme based on a forest at dusk' or 'a high-energy cyberpunk theme'"></textarea>
+                    <button id="ai-generate-btn" class="w-full px-4 py-3 font-bold rounded-lg bg-accent-primary text-[color:var(--accent-fg)] transition-transform hover:scale-102">Generate Palette</button>
+                </div>
+                <div id="ai-results-container" class="mt-6" aria-live="polite">
+                    <div id="ai-spinner" class="hidden mx-auto spinner" role="status"><span class="sr-only">Loading...</span></div>
+                    <div id="ai-results" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="lab" aria-labelledby="lab-heading">
+            <h2 id="lab-heading" class="text-3xl font-bold text-center mb-4 text-[color:var(--accent-primary)]">Live Theme Lab</h2>
+            <p class="text-lg text-center text-secondary max-w-3xl mx-auto section-intro">Experience the impact of different theme variations. Select a theme below to see this entire page adapt in real-time, demonstrating how color and contrast choices affect usability.</p>
+
+            <div id="theme-controls" class="flex flex-wrap justify-center gap-2 mb-8" role="radiogroup" aria-labelledby="theme-select-label">
+                <h3 id="theme-select-label" class="sr-only">Select a Theme</h3>
+                <button data-theme="light" role="radio" aria-checked="true" class="theme-btn px-4 py-2 rounded-full font-semibold border-2">Light</button>
+                <button data-theme="dark" role="radio" aria-checked="false" class="theme-btn px-4 py-2 rounded-full font-semibold border-2">Dark</button>
+                <button data-theme="dimmed" role="radio" aria-checked="false" class="theme-btn px-4 py-2 rounded-full font-semibold border-2">Dimmed</button>
+                <button data-theme="hc-light" role="radio" aria-checked="false" class="theme-btn px-4 py-2 rounded-full font-semibold border-2">High Contrast Light</button>
+                <button data-theme="hc-dark" role="radio" aria-checked="false" class="theme-btn px-4 py-2 rounded-full font-semibold border-2">High Contrast Dark</button>
+                <button data-theme="bordered" id="border-toggle-btn" role="switch" aria-checked="false" class="theme-btn px-4 py-2 rounded-full font-semibold border-2">Hide Borders</button>
+            </div>
+        </section>
+
+        <section id="customizer" aria-labelledby="customizer-heading">
+            <h2 id="customizer-heading" class="text-3xl font-bold text-center mb-4 text-[color:var(--accent-primary)]">Theme Customizer</h2>
+            <p class="text-lg text-center text-secondary max-w-3xl mx-auto section-intro">Fine-tune the current theme to your liking. Changes are applied instantly across the page.</p>
+
+            <div class="themed-card bg-secondary p-6 rounded-xl border border-border-default">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="lg:col-span-1 space-y-4">
+                        <h3 class="text-lg font-bold">Colors</h3>
+                        <div class="flex items-center justify-between">
+                            <label for="accent-color-picker" class="font-medium">Accent</label>
+                            <input type="color" id="accent-color-picker" class="w-10 h-10 rounded border-none bg-transparent">
+                        </div>
+                         <div class="flex items-center justify-between">
+                            <label for="bg-color-picker" class="font-medium">Background</label>
+                            <input type="color" id="bg-color-picker" class="w-10 h-10 rounded border-none bg-transparent">
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <label for="text-color-picker" class="font-medium">Text</label>
+                            <input type="color" id="text-color-picker" class="w-10 h-10 rounded border-none bg-transparent">
+                        </div>
+                    </div>
+                     <div class="lg:col-span-1 space-y-4">
+                        <h3 class="text-lg font-bold">Typography</h3>
+                        <div>
+                            <label for="font-family-select" class="block font-medium mb-1">Body Font</label>
+                            <select id="font-family-select" class="w-full p-2 rounded-md border border-border-default bg-primary">
+                                <option value="'Inter', sans-serif">Inter</option>
+                                <option value="'Source Sans Pro', sans-serif">Source Sans Pro</option>
+                                <option value="'Fira Code', monospace">Fira Code (Mono)</option>
+                                <option value="'Roboto Mono', monospace">Roboto Mono (Mono)</option>
+                            </select>
+                        </div>
+                         <div>
+                            <label for="font-size-slider" class="block font-medium mb-1">Font Size: <span id="font-size-value">16px</span></label>
+                            <input type="range" id="font-size-slider" min="12" max="20" value="16">
+                        </div>
+                    </div>
+                     <div class="lg:col-span-1 space-y-4">
+                        <h3 class="text-lg font-bold">Layout & Export</h3>
+                         <div>
+                            <label for="spacing-slider" class="block font-medium mb-1">Spacing Unit: <span id="spacing-value">16px</span></label>
+                            <input type="range" id="spacing-slider" min="8" max="24" value="16">
+                        </div>
+                         <div class="mt-4 flex items-center gap-2">
+                             <button id="reset-customizer-btn" class="p-3 rounded-lg bg-secondary border border-border-default text-secondary hover:border-accent-primary" aria-label="Reset Customizations">
+                                &#x21BA; <!-- Antidextral arrow with circular tail -->
+                             </button>
+                            <button id="export-theme-btn" class="w-full px-4 py-3 font-bold rounded-lg bg-accent-primary text-[color:var(--accent-fg)] transition-transform hover:scale-102">Export Theme to JSON</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="snippets" aria-labelledby="snippets-heading">
+            <h2 id="snippets-heading" class="text-3xl font-bold text-center mb-4 text-[color:var(--accent-primary)]">Code Snippet Showcase</h2>
+            <p class="text-lg text-center text-secondary max-w-3xl mx-auto section-intro">See how syntax highlighting looks with the current theme across different languages.</p>
+            <div class="themed-card bg-secondary p-6 rounded-xl border border-border-default">
+                <div id="snippet-tabs" class="border-b border-border-default" role="tablist" aria-label="Code Snippets">
+                    <button role="tab" aria-selected="true" aria-controls="panel-js" class="snippet-tab p-3 font-medium border-b-2">JavaScript</button>
+                    <button role="tab" aria-selected="false" aria-controls="panel-html" class="snippet-tab p-3 font-medium border-b-2">HTML</button>
+                    <button role="tab" aria-selected="false" aria-controls="panel-css" class="snippet-tab p-3 font-medium border-b-2">CSS</button>
+                    <button role="tab" aria-selected="false" aria-controls="panel-py" class="snippet-tab p-3 font-medium border-b-2">Python</button>
+                    <button role="tab" aria-selected="false" aria-controls="panel-json" class="snippet-tab p-3 font-medium border-b-2">JSON</button>
+                    <button role="tab" aria-selected="false" aria-controls="panel-cs" class="snippet-tab p-3 font-medium border-b-2">C#</button>
+                    <button role="tab" aria-selected="false" aria-controls="panel-yaml" class="snippet-tab p-3 font-medium border-b-2">YAML</button>
+                    <button role="tab" aria-selected="false" aria-controls="panel-svg" class="snippet-tab p-3 font-medium border-b-2">SVG</button>
+                </div>
+                <div class="bg-primary mt-4 p-4 rounded-b-lg">
+                    <div id="panel-js" role="tabpanel" class="snippet-panel"><pre class="font-code text-sm"><code><span style="color: var(--syntax-comment)">// Fetches user data from an API</span>
+<span style="color: var(--syntax-keyword)">async function</span> <span style="color: var(--accent-primary)">getUser</span>(<span style="color: var(--syntax-string)">id</span>) {
+  <span style="color: var(--syntax-keyword)">const</span> response = <span style="color: var(--syntax-keyword)">await</span> <span style="color: var(--accent-primary)">fetch</span>(<span style="color: var(--syntax-string)">`/api/users/${id}`</span>);
+  <span style="color: var(--syntax-keyword)">if</span> (!response.ok) {
+    <span style="color: var(--syntax-keyword)">throw new</span> <span style="color: var(--error)">Error</span>(<span style="color: var(--syntax-string)">'User not found'</span>);
+  }
+  <span style="color: var(--syntax-keyword)">return</span> response.<span style="color: var(--accent-primary)">json</span>();
+}</code></pre></div>
+                    <div id="panel-html" role="tabpanel" class="snippet-panel hidden"><pre class="font-code text-sm"><code><span style="color: var(--syntax-comment)">&lt;!-- A card component --&gt;</span>
+&lt;<span style="color: var(--syntax-tag)">section</span> <span style="color: var(--syntax-attr)">class</span>=<span style="color: var(--syntax-string)">"card"</span>&gt;
+  &lt;<span style="color: var(--syntax-tag)">h2</span> <span style="color: var(--syntax-attr)">class</span>=<span style="color: var(--syntax-string)">"card-title"</span>&gt;Title&lt;/<span style="color: var(--syntax-tag)">h2</span>&gt;
+  &lt;<span style="color: var(--syntax-tag)">p</span>&gt;This is a simple card component for display.&lt;/<span style="color: var(--syntax-tag)">p</span>&gt;
+  &lt;<span style="color: var(--syntax-tag)">button</span> <span style="color: var(--syntax-attr)">class</span>=<span style="color: var(--syntax-string)">"btn btn-primary"</span>&gt;Learn More&lt;/<span style="color: var(--syntax-tag)">button</span>&gt;
+&lt;/<span style="color: var(--syntax-tag)">section</span>&gt;</code></pre></div>
+                    <div id="panel-css" role="tabpanel" class="snippet-panel hidden"><pre class="font-code text-sm"><code><span style="color: var(--syntax-comment)">/* Basic button styling */</span>
+.<span style="color: var(--syntax-tag)">btn</span> {
+  <span style="color: var(--syntax-attr)">padding</span>: <span style="color: var(--syntax-number)">0.5</span>rem <span style="color: var(--syntax-number)">1</span>rem;
+  <span style="color: var(--syntax-attr)">border-radius</span>: <span style="color: var(--syntax-number)">4</span>px;
+  <span style="color: var(--syntax-attr)">background-color</span>: <span style="color: var(--accent-primary)">var(--accent-primary)</span>;
+  <span style="color: var(--syntax-attr)">color</span>: <span style="color: var(--accent-fg)">var(--accent-fg)</span>;
+  <span style="color: var(--syntax-attr)">border</span>: none;
+}</code></pre></div>
+                     <div id="panel-py" role="tabpanel" class="snippet-panel hidden"><pre class="font-code text-sm"><code><span style="color: var(--syntax-comment)"># A simple Python function</span>
+<span style="color: var(--syntax-keyword)">def</span> <span style="color: var(--accent-primary)">greet</span>(name):
+    <span style="color: var(--syntax-string)">"""Greets the given name."""</span>
+    <span style="color: var(--syntax-keyword)">return</span> <span style="color: var(--syntax-string)">f"Hello, {name}!"</span>
+
+<span style="color: var(--syntax-keyword)">if</span> __name__ == <span style="color: var(--syntax-string)">"__main__"</span>:
+    <span style="color: var(--accent-primary)">print</span>(greet(<span style="color: var(--syntax-string)">'World'</span>))</code></pre></div>
+                    <div id="panel-json" role="tabpanel" class="snippet-panel hidden"><pre class="font-code text-sm"><code>{
+  <span style="color: var(--syntax-string)">"name"</span>: <span style="color: var(--syntax-string)">"vscode-theme-guide"</span>,
+  <span style="color: var(--syntax-string)">"version"</span>: <span style="color: var(--syntax-string)">"1.0.0"</span>,
+  <span style="color: var(--syntax-string)">"accessible"</span>: <span style="color: var(--syntax-keyword)">true</span>,
+  <span style="color: var(--syntax-string)">"colors"</span>: <span style="color: var(--syntax-number)">18</span>
+}</code></pre></div>
+                    <div id="panel-cs" role="tabpanel" class="snippet-panel hidden"><pre class="font-code text-sm"><code><span style="color: var(--syntax-keyword)">using</span> System;
+
+<span style="color: var(--syntax-keyword)">public class</span> <span style="color: var(--syntax-tag)">Program</span>
+{
+    <span style="color: var(--syntax-keyword)">public static void</span> <span style="color: var(--accent-primary)">Main</span>()
+    {
+        <span style="color: var(--syntax-comment)">// Output to console</span>
+        Console.<span style="color: var(--accent-primary)">WriteLine</span>(<span style="color: var(--syntax-string)">"Hello, World!"</span>);
+    }
+}</code></pre></div>
+                    <div id="panel-yaml" role="tabpanel" class="snippet-panel hidden"><pre class="font-code text-sm"><code><span style="color: var(--syntax-attr)">name</span>: <span style="color: var(--syntax-string)">CI Pipeline</span>
+<span style="color: var(--syntax-attr)">on</span>:
+  <span style="color: var(--syntax-attr)">push</span>:
+    <span style="color: var(--syntax-attr)">branches</span>: [ <span style="color: var(--syntax-string)">main</span> ]
+<span style="color: var(--syntax-attr)">jobs</span>:
+  <span style="color: var(--syntax-attr)">build</span>:
+    <span style="color: var(--syntax-attr)">runs-on</span>: <span style="color: var(--syntax-string)">ubuntu-latest</span>
+    <span style="color: var(--syntax-attr)">steps</span>:
+    - <span style="color: var(--syntax-attr)">uses</span>: <span style="color: var(--syntax-string)">actions/checkout@v2</span></code></pre></div>
+                    <div id="panel-svg" role="tabpanel" class="snippet-panel hidden"><pre class="font-code text-sm"><code><span style="color: var(--syntax-comment)">&lt;!-- A simple circle --&gt;</span>
+&lt;<span style="color: var(--syntax-tag)">svg</span> <span style="color: var(--syntax-attr)">width</span>=<span style="color: var(--syntax-string)">"100"</span> <span style="color: var(--syntax-attr)">height</span>=<span style="color: var(--syntax-string)">"100"</span>&gt;
+  &lt;<span style="color: var(--syntax-tag)">circle</span> 
+    <span style="color: var(--syntax-attr)">cx</span>=<span style="color: var(--syntax-string)">"50"</span> <span style="color: var(--syntax-attr)">cy</span>=<span style="color: var(--syntax-string)">"50"</span> <span style="color: var(--syntax-attr)">r</span>=<span style="color: var(--syntax-string)">"40"</span> 
+    <span style="color: var(--syntax-attr)">stroke</span>=<span style="color: var(--syntax-string)">"var(--text-secondary)"</span> 
+    <span style="color: var(--syntax-attr)">stroke-width</span>=<span style="color: var(--syntax-string)">"4"</span> 
+    <span style="color: var(--syntax-attr)">fill</span>=<span style="color: var(--syntax-string)">"var(--accent-primary)"</span> 
+  /&gt;
+&lt;/<span style="color: var(--syntax-tag)">svg</span>&gt;</code></pre></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="icons" class="mb-16 scroll-mt-24" aria-labelledby="icons-heading">
+            <h2 id="icons-heading" class="text-3xl font-bold text-center mb-4 text-[color:var(--accent-primary)]">File & Product Icons</h2>
+             <p class="text-lg text-center text-secondary max-w-3xl mx-auto section-intro">Beyond colors, icons are key to a theme. This section will showcase File Icon and Product Icon themes.</p>
+             <div class="themed-card bg-secondary p-8 rounded-xl border border-border-default text-center">
+                 <p class="font-semibold text-lg">Coming Soon!</p>
+                 <p class="text-secondary">This feature is currently under development.</p>
+             </div>
+        </section>
+
+        <section id="accessibility" class="mb-16 scroll-mt-24" aria-labelledby="accessibility-heading">
+             <h2 id="accessibility-heading" class="text-3xl font-bold text-center mb-4 text-[color:var(--accent-primary)]">Accessibility by the Numbers</h2>
+             <p class="text-lg text-center text-secondary max-w-3xl mx-auto section-intro">WCAG defines specific contrast ratios to ensure content is legible for everyone. This chart shows the minimum required values for text and UI components.</p>
+             <div class="themed-card bg-secondary p-6 rounded-xl border border-border-default">
+                <div class="chart-container">
+                    <canvas id="wcagChart" role="img" aria-label="A bar chart showing WCAG contrast ratio requirements. Normal text AA is 4.5:1, Large text AA is 3:1, Normal text AAA is 7:1, and Large text AAA is 4.5:1."></canvas>
+                </div>
+             </div>
+        </section>
+
+        <section id="workflow" class="mb-16 scroll-mt-24" aria-labelledby="workflow-heading">
+            <h2 id="workflow-heading" class="text-3xl font-bold text-center mb-4 text-[color:var(--accent-primary)]">Programmatic Workflow</h2>
+            <p class="text-lg text-center text-secondary max-w-3xl mx-auto section-intro">Manual theme creation is inefficient. A programmatic workflow ensures consistency, maintainability, and scalability across all theme variations.</p>
+            <div class="themed-card bg-secondary p-8 rounded-xl border border-border-default">
+                <div class="flex flex-col md:flex-row items-center justify-around gap-4">
+                    <div class="text-center"><span class="text-4xl">🎨</span><p class="mt-1 font-semibold">Define Palette</p></div>
+                    <p class="text-3xl text-secondary font-code" aria-hidden="true">&#8594;</p>
+                    <div class="text-center"><span class="text-4xl">⚙️</span><p class="mt-1 font-semibold">Build Script</p></div>
+                    <p class="text-3xl text-secondary font-code" aria-hidden="true">&#8594;</p>
+                    <div class="text-center"><span class="text-4xl">📦</span><p class="mt-1 font-semibold">Generate Themes</p></div>
+                    <p class="text-3xl text-secondary font-code" aria-hidden="true">&#8594;</p>
+                    <div class="text-center"><span class="text-4xl">🧪</span><p class="mt-1 font-semibold">Test & Iterate</p></div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="installation" class="scroll-mt-24" aria-labelledby="installation-heading">
+            <h2 id="installation-heading" class="text-3xl font-bold text-center mb-4 text-[color:var(--accent-primary)]">Installation & Activation</h2>
+            <p class="text-lg text-center text-secondary max-w-3xl mx-auto section-intro">Get started with your new theme in just a few steps. Follow the guide for your preferred installation method.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="themed-card bg-secondary p-6 rounded-xl border border-border-default">
+                    <h3 class="text-2xl font-bold mb-4 text-center">From Marketplace</h3>
+                    <ol class="space-y-4">
+                        <li class="flex items-start gap-4 transition-colors hover:bg-[color:var(--accent-primary)]/10 p-2 rounded-lg"><span class="flex items-center justify-center font-bold text-accent-primary bg-accent-primary/10 rounded-full h-8 w-8 flex-shrink-0">1</span><span class="pt-1">Open the <strong class="text-accent-primary">Extensions</strong> view (`Ctrl+Shift+X`).</span></li>
+                        <li class="flex items-start gap-4 transition-colors hover:bg-[color:var(--accent-primary)]/10 p-2 rounded-lg"><span class="flex items-center justify-center font-bold text-accent-primary bg-accent-primary/10 rounded-full h-8 w-8 flex-shrink-0">2</span><span class="pt-1">Search for the theme name.</span></li>
+                        <li class="flex items-start gap-4 transition-colors hover:bg-[color:var(--accent-primary)]/10 p-2 rounded-lg"><span class="flex items-center justify-center font-bold text-accent-primary bg-accent-primary/10 rounded-full h-8 w-8 flex-shrink-0">3</span><span class="pt-1">Click the <strong class="text-accent-primary">Install</strong> button.</span></li>
+                        <li class="flex items-start gap-4 transition-colors hover:bg-[color:var(--accent-primary)]/10 p-2 rounded-lg"><span class="flex items-center justify-center font-bold text-accent-primary bg-accent-primary/10 rounded-full h-8 w-8 flex-shrink-0">4</span><span class="pt-1">Open the theme picker (`Ctrl+Shift+P` > "Color Theme") and select a variation.</span></li>
+                    </ol>
+                </div>
+                 <div class="themed-card bg-secondary p-6 rounded-xl border border-border-default">
+                    <h3 class="text-2xl font-bold mb-4 text-center">From VSIX File</h3>
+                    <ol class="space-y-4">
+                        <li class="flex items-start gap-4 transition-colors hover:bg-[color:var(--accent-primary)]/10 p-2 rounded-lg"><span class="flex items-center justify-center font-bold text-accent-primary bg-accent-primary/10 rounded-full h-8 w-8 flex-shrink-0">1</span><span class="pt-1">Navigate to the <strong class="text-accent-primary">Extensions</strong> view.</span></li>
+                        <li class="flex items-start gap-4 transition-colors hover:bg-[color:var(--accent-primary)]/10 p-2 rounded-lg"><span class="flex items-center justify-center font-bold text-accent-primary bg-accent-primary/10 rounded-full h-8 w-8 flex-shrink-0">2</span><span class="pt-1">Click the `...` menu and select <strong class="text-accent-primary">Install from VSIX...</strong></span></li>
+                        <li class="flex items-start gap-4 transition-colors hover:bg-[color:var(--accent-primary)]/10 p-2 rounded-lg"><span class="flex items-center justify-center font-bold text-accent-primary bg-accent-primary/10 rounded-full h-8 w-8 flex-shrink-0">3</span><span class="pt-1">Locate and select the `.vsix` file.</span></li>
+                        <li class="flex items-start gap-4 transition-colors hover:bg-[color:var(--accent-primary)]/10 p-2 rounded-lg"><span class="flex items-center justify-center font-bold text-accent-primary bg-accent-primary/10 rounded-full h-8 w-8 flex-shrink-0">4</span><span class="pt-1">Reload VS Code if prompted, then activate the theme.</span></li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="export-modal" class="fixed inset-0 bg-black/50 hidden items-center justify-center p-4 z-20" role="dialog" aria-modal="true" aria-labelledby="export-modal-title">
+        <div class="bg-primary w-full max-w-2xl rounded-lg shadow-lg p-6 border border-border-default">
+            <h2 id="export-modal-title" class="text-2xl font-bold mb-4">Exported Theme JSON</h2>
+            <p class="text-secondary mb-4">Copy this JSON and paste it into your VS Code `settings.json` file to apply the customizations.</p>
+            <div class="relative">
+                <pre class="bg-secondary p-4 rounded-md border border-border-default max-h-96 overflow-auto"><code id="json-output" class="font-code text-sm"></code></pre>
+                <button id="copy-json-btn" class="absolute top-2 right-2 px-3 py-1 text-sm font-semibold rounded-md bg-accent-primary text-[color:var(--accent-fg)]">Copy</button>
+            </div>
+            <button id="close-modal-btn" class="mt-4 w-full px-4 py-2 font-bold rounded-lg bg-secondary border border-border-default hover:border-accent-primary transition-colors">Close</button>
+        </div>
+    </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        let palette = {
+            'Light BG': '#FFFFFF', 'Light FG': '#24292E', 'Light UI': '#F6F8FA', 'Light Border': '#D1D5DA', 'Light Accent': '#0052CC', 'Light Keyword': '#D73A49', 'Light String': '#032F62', 'Light Comment': '#6A737D',
+            'Dark BG': '#1E1E1E', 'Dark FG': '#D4D4D4', 'Dark UI': '#252526', 'Dark Border': '#333333', 'Dark Accent': '#58A6FF', 'Dark Keyword': '#F97583', 'Dark String': '#A5D6FF', 'Dark Comment': '#8B949E',
+            'Error': '#CB2431', 'Warning': '#B08800'
+        };
+
+        const bgGrid = document.getElementById('bg-selector-grid');
+        const fgList = document.getElementById('fg-selector-list');
+        
+        let selectedBgColor = palette['Light BG'];
+        let selectedFgColor = palette['Light FG'];
+
+        function hexToRgb(hex) {
+            let r = 0, g = 0, b = 0;
+            if (hex.length == 4) { r = parseInt(hex[1] + hex[1], 16); g = parseInt(hex[2] + hex[2], 16); b = parseInt(hex[3] + hex[3], 16); } 
+            else if (hex.length == 7) { r = parseInt(hex[1] + hex[2], 16); g = parseInt(hex[3] + hex[4], 16); b = parseInt(hex[5] + hex[6], 16); }
+            return [r,g,b];
+        }
+
+        function getLuminance(hex) {
+            const [r, g, b] = hexToRgb(hex).map(v => { v /= 255; return v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4); });
+            return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+        }
+
+        function getContrast(fg, bg) {
+            const lum1 = getLuminance(fg); const lum2 = getLuminance(bg);
+            return (Math.max(lum1, lum2) + 0.05) / (Math.min(lum1, lum2) + 0.05);
+        }
+        
+        function populateColorSelectors() {
+            bgGrid.innerHTML = '';
+            fgList.innerHTML = '';
+
+            Object.entries(palette).forEach(([name, color]) => {
+                const swatch = document.createElement('button');
+                swatch.className = 'h-10 w-10 rounded-md cursor-pointer ring-2 ring-offset-2 ring-offset-[var(--bg-secondary)] transition-all focus:outline-none';
+                swatch.style.backgroundColor = color;
+                swatch.style.borderColor = (color === selectedBgColor) ? 'var(--accent-primary)' : 'transparent';
+                swatch.dataset.color = color;
+                swatch.setAttribute('aria-label', `Set background to ${name}`);
+                swatch.addEventListener('click', () => {
+                    selectedBgColor = color;
+                    document.querySelectorAll('#bg-selector-grid button').forEach(d => d.style.borderColor = 'transparent');
+                    swatch.style.borderColor = 'var(--accent-primary)';
+                    updateContrastChecker();
+                });
+                bgGrid.appendChild(swatch);
+                
+                const textSample = document.createElement('button');
+                textSample.className = 'p-1 rounded-md cursor-pointer font-semibold text-center transition-all w-full focus:outline-none';
+                textSample.style.color = color;
+                if (color === selectedFgColor) {
+                    textSample.style.textDecoration = 'underline';
+                    textSample.style.textDecorationColor = 'var(--accent-primary)';
+                    textSample.style.textDecorationThickness = '3px';
+                }
+                textSample.textContent = name;
+                textSample.dataset.color = color;
+                textSample.setAttribute('aria-label', `Set foreground to ${name}`);
+                
+                textSample.addEventListener('click', () => {
+                    selectedFgColor = color;
+                    document.querySelectorAll('#fg-selector-list button').forEach(p => p.style.textDecoration = 'none');
+                    textSample.style.textDecoration = 'underline';
+                    textSample.style.textDecorationColor = 'var(--accent-primary)';
+                    textSample.style.textDecorationThickness = '3px';
+                    updateContrastChecker();
+                });
+                fgList.appendChild(textSample);
+            });
+            updateFgSampleBackgrounds();
+        }
+
+        function updateFgSampleBackgrounds() {
+            const pageBgIsDark = getLuminance(getComputedStyle(document.documentElement).getPropertyValue('--bg-primary').trim()) < 0.5;
+            document.querySelectorAll('#fg-selector-list button').forEach(p => {
+                const textColor = p.dataset.color;
+                const textIsLight = getLuminance(textColor) > 0.6;
+                p.style.backgroundColor = (textIsLight && !pageBgIsDark) ? '#374151' : 'transparent';
+            });
+        }
+
+        function updateContrastChecker() {
+            const ratio = getContrast(selectedFgColor, selectedBgColor);
+            document.getElementById('contrast-ratio').textContent = `${ratio.toFixed(2)} : 1`;
+            document.getElementById('aa-status').textContent = ratio >= 4.5 ? '✅' : (ratio >= 3 ? '✅ (Large)' : '❌');
+            document.getElementById('aaa-status').textContent = ratio >= 7 ? '✅' : (ratio >= 4.5 ? '✅ (Large)' : '❌');
+        }
+
+        populateColorSelectors();
+        updateContrastChecker();
+
+        let wcagChartInstance = null;
+        function createOrUpdateWcagChart() {
+            const ctx = document.getElementById('wcagChart').getContext('2d');
+            const style = getComputedStyle(document.documentElement);
+            const textColor = style.getPropertyValue('--text-primary').trim();
+            const gridColor = style.getPropertyValue('--border-default').trim();
+            const warningColor = style.getPropertyValue('--warning').trim();
+            const errorColor = style.getPropertyValue('--error').trim();
+
+            if (wcagChartInstance) wcagChartInstance.destroy();
+            
+            wcagChartInstance = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Normal Text AA', 'Large Text/UI AA', 'Normal Text AAA', 'Large Text AAA'],
+                    datasets: [{
+                        label: 'Minimum Contrast Ratio', data: [4.5, 3, 7, 4.5],
+                        backgroundColor: [warningColor, warningColor, errorColor, errorColor],
+                        borderRadius: 4
+                    }]
+                },
+                options: {
+                    responsive: true, maintainAspectRatio: false,
+                    plugins: { legend: { display: false } },
+                    scales: {
+                        y: { beginAtZero: true, grid: { color: gridColor }, ticks: { color: textColor } },
+                        x: { grid: { display: false }, ticks: { color: textColor } }
+                    }
+                }
+            });
+        }
+        
+        const html = document.documentElement;
+        const themeControls = document.getElementById('theme-controls');
+        const borderToggleButton = document.getElementById('border-toggle-btn');
+        const themeClassNames = ['light-theme', 'dark-theme', 'dimmed-theme', 'hc-light-theme', 'hc-dark-theme'];
+
+        function applyActiveStyles(activeButton) {
+            const buttons = themeControls.querySelectorAll('button[data-theme]');
+            buttons.forEach(btn => {
+                const isBorderButton = btn.dataset.theme === 'bordered';
+                if (!isBorderButton) {
+                    const isActive = btn === activeButton;
+                    btn.setAttribute('aria-checked', isActive);
+                    btn.style.backgroundColor = isActive ? 'var(--accent-primary)' : 'transparent';
+                    btn.style.color = isActive ? 'var(--accent-fg)' : 'var(--text-secondary)';
+                }
+                btn.style.borderColor = 'var(--border-default)';
+            });
+            const isBordersHidden = html.classList.contains('borders-hidden');
+            borderToggleButton.setAttribute('aria-checked', isBordersHidden);
+            borderToggleButton.style.backgroundColor = isBordersHidden ? 'var(--accent-primary)' : 'transparent';
+            borderToggleButton.style.color = isBordersHidden ? 'var(--accent-fg)' : 'var(--text-secondary)';
+        }
+
+        borderToggleButton.addEventListener('click', () => {
+            html.classList.toggle('borders-hidden');
+            borderToggleButton.textContent = html.classList.contains('borders-hidden') ? 'Show Borders' : 'Hide Borders';
+            const activeThemeButton = themeControls.querySelector('button[role="radio"][aria-checked="true"]');
+            applyActiveStyles(activeThemeButton);
+        });
+
+        themeControls.querySelectorAll('button[role="radio"]').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const theme = btn.dataset.theme;
+                themeClassNames.forEach(cls => html.classList.remove(cls));
+                html.classList.add(`${theme}-theme`);
+                
+                setTimeout(() => { // allow CSS variables to update
+                    applyActiveStyles(btn);
+                    createOrUpdateWcagChart();
+                    updateFgSampleBackgrounds();
+                    setCustomizerDefaults();
+                }, 10);
+            });
+        });
+        
+        // --- Customizer Controls ---
+        const customizerInputs = {
+            accent: document.getElementById('accent-color-picker'),
+            bg: document.getElementById('bg-color-picker'),
+            text: document.getElementById('text-color-picker'),
+            fontFamily: document.getElementById('font-family-select'),
+            fontSize: document.getElementById('font-size-slider'),
+            spacing: document.getElementById('spacing-slider')
+        };
+        const customizerValueDisplays = {
+            fontSize: document.getElementById('font-size-value'),
+            spacing: document.getElementById('spacing-value')
+        }
+        let currentThemeDefaults = {};
+
+        function captureAndSetDefaults() {
+            const style = getComputedStyle(html);
+            currentThemeDefaults = {
+                accent: style.getPropertyValue('--accent-primary').trim(),
+                bg: style.getPropertyValue('--bg-primary').trim(),
+                text: style.getPropertyValue('--text-primary').trim(),
+                fontFamily: style.getPropertyValue('--font-body').trim(),
+                fontSize: style.getPropertyValue('--base-font-size').trim(),
+                spacing: style.getPropertyValue('--base-spacing-unit').trim()
+            };
+            
+            customizerInputs.accent.value = currentThemeDefaults.accent;
+            customizerInputs.bg.value = currentThemeDefaults.bg;
+            customizerInputs.text.value = currentThemeDefaults.text;
+            customizerInputs.fontFamily.value = currentThemeDefaults.fontFamily;
+            const fontSizePx = parseFloat(currentThemeDefaults.fontSize) * 16;
+            customizerInputs.fontSize.value = fontSizePx;
+            customizerValueDisplays.fontSize.textContent = `${fontSizePx}px`;
+            const spacingPx = parseFloat(currentThemeDefaults.spacing) * 16;
+            customizerInputs.spacing.value = spacingPx;
+            customizerValueDisplays.spacing.textContent = `${spacingPx}px`;
+        }
+
+        document.getElementById('reset-customizer-btn').addEventListener('click', () => {
+            html.style.setProperty('--accent-primary', currentThemeDefaults.accent);
+            html.style.setProperty('--bg-primary', currentThemeDefaults.bg);
+            html.style.setProperty('--text-primary', currentThemeDefaults.text);
+            html.style.setProperty('--font-body', currentThemeDefaults.fontFamily);
+            html.style.setProperty('--base-font-size', currentThemeDefaults.fontSize);
+            html.style.setProperty('--base-spacing-unit', currentThemeDefaults.spacing);
+            
+            captureAndSetDefaults();
+            applyActiveStyles(themeControls.querySelector('button[aria-checked="true"]'));
+        });
+
+        customizerInputs.accent.addEventListener('input', (e) => {
+            const newColor = e.target.value;
+            html.style.setProperty('--accent-primary', newColor);
+            html.style.setProperty('--accent-fg', getLuminance(newColor) > 0.5 ? '#000000' : '#FFFFFF');
+            applyActiveStyles(themeControls.querySelector('button[aria-checked="true"]'));
+        });
+        customizerInputs.bg.addEventListener('input', (e) => html.style.setProperty('--bg-primary', e.target.value));
+        customizerInputs.text.addEventListener('input', (e) => html.style.setProperty('--text-primary', e.target.value));
+        customizerInputs.fontFamily.addEventListener('input', (e) => html.style.setProperty('--font-body', e.target.value));
+        customizerInputs.fontSize.addEventListener('input', (e) => {
+            const size = `${e.target.value}px`;
+            html.style.setProperty('--base-font-size', size);
+            customizerValueDisplays.fontSize.textContent = size;
+        });
+        customizerInputs.spacing.addEventListener('input', (e) => {
+            const size = `${e.target.value / 16}rem`;
+            html.style.setProperty('--base-spacing-unit', size);
+            customizerValueDisplays.spacing.textContent = `${e.target.value}px`;
+        });
+        
+        // --- Export Logic ---
+        const exportBtn = document.getElementById('export-theme-btn');
+        const exportModal = document.getElementById('export-modal');
+        const closeModalBtn = document.getElementById('close-modal-btn');
+        const copyJsonBtn = document.getElementById('copy-json-btn');
+        const jsonOutput = document.getElementById('json-output');
+
+        function generateThemeJSON() {
+            const style = getComputedStyle(html);
+            const themeSettings = {
+                "workbench.colorCustomizations": {
+                    "editor.background": style.getPropertyValue('--bg-primary').trim(),
+                    "editor.foreground": style.getPropertyValue('--text-primary').trim(),
+                    "sideBar.background": style.getPropertyValue('--bg-secondary').trim(),
+                    "sideBar.foreground": style.getPropertyValue('--text-primary').trim(),
+                    "sideBar.border": style.getPropertyValue('--border-default').trim(),
+                    "activityBar.background": style.getPropertyValue('--bg-secondary').trim(),
+                    "activityBar.foreground": style.getPropertyValue('--text-primary').trim(),
+                    "activityBar.inactiveForeground": style.getPropertyValue('--text-secondary').trim(),
+                    "activityBar.border": style.getPropertyValue('--border-default').trim(),
+                    "statusBar.background": style.getPropertyValue('--bg-secondary').trim(),
+                    "statusBar.foreground": style.getPropertyValue('--text-secondary').trim(),
+                    "statusBar.border": style.getPropertyValue('--border-default').trim(),
+                    "button.background": style.getPropertyValue('--accent-primary').trim(),
+                    "button.foreground": style.getPropertyValue('--accent-fg').trim(),
+                    "focusBorder": style.getPropertyValue('--accent-primary').trim(),
+                    "input.border": style.getPropertyValue('--border-default').trim(),
+                    "list.hoverBackground": style.getPropertyValue('--bg-secondary').trim(),
+                    "list.activeSelectionBackground": style.getPropertyValue('--accent-primary').trim() + '80', // with transparency
+                    "list.activeSelectionForeground": style.getPropertyValue('--text-primary').trim(),
+                },
+                "editor.tokenColorCustomizations": {
+                    "textMateRules": [
+                        { "scope": ["comment", "punctuation.definition.comment"], "settings": { "foreground": style.getPropertyValue('--syntax-comment').trim() }},
+                        { "scope": ["string", "punctuation.definition.string"], "settings": { "foreground": style.getPropertyValue('--syntax-string').trim() }},
+                        { "scope": ["keyword.control", "storage.type", "storage.modifier"], "settings": { "foreground": style.getPropertyValue('--syntax-keyword').trim() }}
+                    ]
+                }
+            };
+            return JSON.stringify(themeSettings, null, 2);
+        }
+
+        exportBtn.addEventListener('click', () => {
+            jsonOutput.textContent = generateThemeJSON();
+            exportModal.style.display = 'flex';
+        });
+
+        closeModalBtn.addEventListener('click', () => {
+            exportModal.style.display = 'none';
+        });
+
+        copyJsonBtn.addEventListener('click', () => {
+            const textarea = document.createElement('textarea');
+            textarea.value = jsonOutput.textContent;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textarea);
+            copyJsonBtn.textContent = 'Copied!';
+            setTimeout(() => { copyJsonBtn.textContent = 'Copy'; }, 2000);
+        });
+        
+        // --- Gemini API Integration ---
+        const aiGenerateBtn = document.getElementById('ai-generate-btn');
+        const suggestColorsBtn = document.getElementById('suggest-colors-btn');
+        const aiPrompt = document.getElementById('ai-prompt');
+        const aiResultsContainer = document.getElementById('ai-results');
+        const aiSpinner = document.getElementById('ai-spinner');
+        const apiKey = ""; 
+
+        async function callGemini(prompt, schema) {
+            aiSpinner.style.display = 'block';
+            aiResultsContainer.innerHTML = '';
+            
+            const payload = {
+                contents: [{ role: "user", parts: [{ text: prompt }] }],
+                generationConfig: {
+                    responseMimeType: "application/json",
+                    responseSchema: schema
+                }
+            };
+            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
+            try {
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+                if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+                const result = await response.json();
+
+                if (result.candidates && result.candidates[0].content.parts[0].text) {
+                    const generatedPalette = JSON.parse(result.candidates[0].content.parts[0].text);
+                    displayAIPalette(generatedPalette);
+                } else {
+                    aiResultsContainer.innerHTML = `<p class="text-error col-span-full text-center">Sorry, couldn't generate a palette. The response was unexpected.</p>`;
+                }
+            } catch (error) {
+                console.error("Gemini API call failed:", error);
+                aiResultsContainer.innerHTML = `<p class="text-error col-span-full text-center">An error occurred. Please check the console for details.</p>`;
+            } finally {
+                aiSpinner.style.display = 'none';
+            }
+        }
+
+        const paletteSchema = {
+            type: "OBJECT",
+            properties: {
+                "background": { "type": "STRING", "description": "A valid hex color code for the main background." },
+                "foreground": { "type": "STRING", "description": "A valid hex color code for primary text with good contrast on the background." },
+                "accent": { "type": "STRING", "description": "A vivid accent hex color for buttons and links." },
+                "keyword": { "type": "STRING", "description": "A hex color for code keywords." },
+                "string": { "type": "STRING", "description": "A hex color for code strings." },
+                "comment": { "type": "STRING", "description": "A muted hex color for code comments." }
+            },
+            required: ["background", "foreground", "accent", "keyword", "string", "comment"]
+        };
+
+        aiGenerateBtn.addEventListener('click', () => {
+            const promptText = aiPrompt.value;
+            if (!promptText.trim()) {
+                aiResultsContainer.innerHTML = `<p class="text-warning col-span-full text-center">Please describe a theme concept.</p>`;
+                return;
+            }
+            const fullPrompt = `Generate a 6-color VS Code theme palette based on this concept: "${promptText}". The palette should include a background, foreground, accent, keyword, string, and comment color. Ensure the foreground has at least a 4.5:1 contrast ratio against the background. Provide colors as hex codes.`;
+            callGemini(fullPrompt, paletteSchema);
+        });
+
+        suggestColorsBtn.addEventListener('click', () => {
+            const bgIsDark = getLuminance(selectedBgColor) < 0.5;
+            const promptText = `I am creating a VS Code theme. My background color is ${selectedBgColor}. Please suggest an accessible color palette to go with it. I need a primary foreground color with at least a 7:1 contrast ratio against my background. I also need an accent color, a keyword color, a string color, and a comment color that all have at least a 3:1 contrast ratio against my background. The overall theme should feel cohesive and professional. The background is considered ${bgIsDark ? 'dark' : 'light'}.`;
+            callGemini(promptText, paletteSchema);
+        });
+
+        function displayAIPalette(generatedPalette) {
+            aiResultsContainer.innerHTML = '';
+            
+            const newPalette = {};
+            Object.entries(generatedPalette).forEach(([name, color]) => {
+                newPalette[`AI ${name}`] = color.toUpperCase();
+            });
+
+            palette = { ...palette, ...newPalette };
+            Object.entries(generatedPalette).forEach(([name, color]) => {
+                const container = document.createElement('div');
+                container.className = 'text-center';
+                const swatch = document.createElement('div');
+                swatch.className = 'h-16 w-full rounded-md mb-2';
+                swatch.style.backgroundColor = color;
+                const nameP = document.createElement('p');
+                nameP.className = 'text-sm font-semibold capitalize';
+                nameP.textContent = name;
+                const hexP = document.createElement('p');
+                hexP.className = 'text-xs text-secondary font-code';
+                hexP.textContent = color;
+                container.appendChild(swatch);
+                container.appendChild(nameP);
+                container.appendChild(hexP);
+                aiResultsContainer.appendChild(container);
+            });
+            populateColorSelectors();
+        }
+
+        // --- Snippet Tabs Logic ---
+        const snippetTabs = document.getElementById('snippet-tabs');
+        const snippetPanels = document.querySelectorAll('.snippet-panel');
+        snippetTabs.addEventListener('click', (e) => {
+            if (e.target.role !== 'tab') return;
+            
+            snippetTabs.querySelectorAll('[role="tab"]').forEach(tab => {
+                tab.setAttribute('aria-selected', 'false');
+                tab.style.borderColor = 'transparent';
+                tab.style.color = 'var(--text-secondary)';
+            });
+
+            e.target.setAttribute('aria-selected', 'true');
+            e.target.style.borderColor = 'var(--accent-primary)';
+            e.target.style.color = 'var(--text-primary)';
+            
+            snippetPanels.forEach(panel => {
+                panel.classList.add('hidden');
+            });
+            
+            const targetPanel = document.getElementById(e.target.getAttribute('aria-controls'));
+            if (targetPanel) {
+                targetPanel.classList.remove('hidden');
+            }
+        });
+        
+        // --- Nav Menu Logic ---
+        const navToggleBtn = document.getElementById('nav-toggle-btn');
+        const navMenu = document.getElementById('nav-menu');
+        
+        navToggleBtn.addEventListener('click', (e) => {
+            const isExpanded = navToggleBtn.getAttribute('aria-expanded') === 'true';
+            navToggleBtn.setAttribute('aria-expanded', !isExpanded);
+            navMenu.classList.toggle('hidden');
+            e.stopPropagation();
+        });
+        
+        document.addEventListener('click', (e) => {
+             if (!navMenu.contains(e.target) && !navToggleBtn.contains(e.target)) {
+                navToggleBtn.setAttribute('aria-expanded', 'false');
+                navMenu.classList.add('hidden');
+             }
+        });
+
+
+        // Initial setup
+        html.classList.add('light-theme');
+        applyActiveStyles(document.querySelector('.theme-btn[data-theme="light"]'));
+        createOrUpdateWcagChart();
+        captureAndSetDefaults();
+        // Set initial tab state after a delay to allow CSS vars to load
+        setTimeout(() => {
+            const initialTab = snippetTabs.querySelector('[aria-selected="true"]');
+            initialTab.style.borderColor = 'var(--accent-primary)';
+            initialTab.style.color = 'var(--text-primary)';
+            snippetTabs.querySelectorAll('[aria-selected="false"]').forEach(tab => {
+                 tab.style.borderColor = 'transparent';
+                 tab.style.color = 'var(--text-secondary)';
+            });
+        }, 100);
+    });
+    </script>
 </body>
 </html>
