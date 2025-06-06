@@ -1,0 +1,246 @@
+:root {
+    --font-family-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+    /* Light Theme Variables */
+    --bg-color-light: #ffffff;
+    --text-color-light: #212529;
+    --heading-color-light: #1a1a1a;
+    --section-bg-color-light: #f8f9fa;
+    --section-border-color-light: #dee2e6;
+    --pre-bg-color-light: #e9ecef;
+    --pre-text-color-light: #212529;
+    --pre-border-color-light: #ced4da;
+    --button-bg-color-light: #007bff;
+    --button-text-color-light: #ffffff;
+    --button-hover-bg-color-light: #0056b3;
+    --link-color-light: #007bff;
+
+    /* Dark Theme Variables */
+    --bg-color-dark: #1a1a1a; /* Darker background */
+    --text-color-dark: #e0e0e0; /* Lighter text */
+    --heading-color-dark: #f5f5f5; /* Even lighter for headings */
+    --section-bg-color-dark: #2c2c2c; /* Darker section background */
+    --section-border-color-dark: #444444; /* Darker border */
+    --pre-bg-color-dark: #222222; /* Very dark for code blocks */
+    --pre-text-color-dark: #d0d0d0; /* Light gray for code text */
+    --pre-border-color-dark: #383838;
+    --button-bg-color-dark: #007bff; /* Keep button noticeable, or use a theme-specific accent */
+    --button-text-color-dark: #ffffff;
+    --button-hover-bg-color-dark: #0056b3;
+    --link-color-dark: #6cb2eb; /* Lighter blue for links */
+}
+
+body {
+    font-family: var(--font-family-default);
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color-light);
+    color: var(--text-color-light);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding-bottom: 60px; /* Footer height */
+}
+
+body.dark-mode {
+    background-color: var(--bg-color-dark);
+    color: var(--text-color-dark);
+}
+
+header {
+    background-color: var(--section-bg-color-light);
+    color: var(--heading-color-light);
+    padding: 1.5em 0;
+    text-align: center;
+    border-bottom: 1px solid var(--section-border-color-light);
+}
+
+body.dark-mode header {
+    background-color: var(--section-bg-color-dark);
+    color: var(--heading-color-dark);
+    border-bottom: 1px solid var(--section-border-color-dark);
+}
+
+h1, h2, h3 {
+    color: var(--heading-color-light);
+    margin-top: 1.5em;
+    margin-bottom: 0.8em;
+}
+body.dark-mode h1, body.dark-mode h2, body.dark-mode h3 {
+    color: var(--heading-color-dark);
+}
+
+h1 { font-size: 2.5em; }
+h2 { font-size: 2em; }
+h3 { font-size: 1.5em; }
+
+section {
+    padding: 1.5em;
+    margin: 1em auto; /* Center sections */
+    background-color: var(--section-bg-color-light);
+    border: 1px solid var(--section-border-color-light);
+    border-radius: 8px;
+    max-width: 960px; /* Max width for content */
+}
+
+body.dark-mode section {
+    background-color: var(--section-bg-color-dark);
+    border: 1px solid var(--section-border-color-dark);
+}
+
+/* Theme Colors Section */
+#theme-colors .color-swatch-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.color-swatch {
+    width: 100px;
+    height: 100px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.5em;
+    font-size: 0.8em;
+    color: var(--text-color-light); /* Default, assuming light swatch bg */
+    border: 1px solid var(--section-border-color-light);
+}
+
+.color-swatch span {
+    background-color: rgba(255, 255, 255, 0.7); /* Light background for text on swatch */
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+}
+
+body.dark-mode .color-swatch {
+    color: var(--text-color-dark); /* Default, assuming dark swatch bg */
+    border: 1px solid var(--section-border-color-dark);
+}
+
+body.dark-mode .color-swatch span {
+     background-color: rgba(0, 0, 0, 0.5); /* Dark background for text on swatch */
+     color: var(--text-color-dark);
+}
+
+
+/* Typography Section */
+#typography .font-example {
+    margin-bottom: 1em;
+    padding: 0.5em;
+    border-left: 3px solid var(--link-color-light);
+}
+body.dark-mode #typography .font-example {
+    border-left: 3px solid var(--link-color-dark);
+}
+#typography .font-example h4 { margin-top: 0; }
+
+/* Key Design Elements Section */
+#design-elements ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* VSCode Examples Section */
+#vscode-examples .screenshot-container {
+    margin-top: 1em;
+    text-align: center; /* Center screenshots */
+}
+#vscode-examples img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--section-border-color-light);
+    border-radius: 4px;
+}
+body.dark-mode #vscode-examples img {
+    border: 1px solid var(--section-border-color-dark);
+}
+#vscode-examples figcaption {
+    font-size: 0.9em;
+    color: var(--text-color-light);
+    margin-top: 0.5em;
+}
+body.dark-mode #vscode-examples figcaption {
+    color: var(--text-color-dark);
+}
+
+/* Code Syntax Highlighting Section */
+pre {
+    background-color: var(--pre-bg-color-light);
+    color: var(--pre-text-color-light);
+    border: 1px solid var(--pre-border-color-light);
+    padding: 1em;
+    border-radius: 4px;
+    overflow-x: auto; /* For long code lines */
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 0.95em;
+    line-height: 1.6;
+}
+
+body.dark-mode pre {
+    background-color: var(--pre-bg-color-dark);
+    color: var(--pre-text-color-dark);
+    border: 1px solid var(--pre-border-color-dark);
+}
+
+code {
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+/* Toggle Button */
+#mode-toggle-button {
+    padding: 0.7em 1.2em;
+    background-color: var(--button-bg-color-light);
+    color: var(--button-text-color-light);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.2s ease;
+}
+
+#mode-toggle-button:hover {
+    background-color: var(--button-hover-bg-color-light);
+}
+
+body.dark-mode #mode-toggle-button {
+    background-color: var(--button-bg-color-dark);
+    color: var(--button-text-color-dark);
+}
+
+body.dark-mode #mode-toggle-button:hover {
+    background-color: var(--button-hover-bg-color-dark); /* Consider a different hover for dark if needed */
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: var(--section-bg-color-light);
+    color: var(--text-color-light);
+    border-top: 1px solid var(--section-border-color-light);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9em;
+}
+
+body.dark-mode footer {
+    background-color: var(--section-bg-color-dark);
+    color: var(--text-color-dark);
+    border-top: 1px solid var(--section-border-color-dark);
+}
+
+/* Links */
+a {
+    color: var(--link-color-light);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+body.dark-mode a {
+    color: var(--link-color-dark);
+}

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huebris Theme Showcase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Huebris Theme Showcase</h1>
+    </header>
+
+    <section id="welcome">
+        <h2>Welcome to the Huebris Theme!</h2>
+        <p>This page showcases the features and appearance of the Huebris Theme.</p>
+    </section>
+
+    <section id="theme-colors">
+        <h2>Theme Colors</h2>
+
+        <h3>Light Mode Colors</h3>
+        <div class="color-swatch-container">
+            <div class="color-swatch" style="background-color: #FFFFFF;"><span>#FFFFFF<br>Editor BG</span></div>
+            <div class="color-swatch" style="background-color: #333333;"><span>#333333<br>Default Text</span></div>
+            <div class="color-swatch" style="background-color: #F5F5F5;"><span>#F5F5F5<br>Activity Bar BG</span></div>
+            <div class="color-swatch" style="background-color: #F5F5F5;"><span>#F5F5F5<br>Side Bar BG</span></div>
+            <div class="color-swatch" style="background-color: #007ACC;"><span>#007ACC<br>Status Bar BG</span></div>
+            <div class="color-swatch" style="background-color: #007ACC;"><span>#007ACC<br>Button BG</span></div>
+            <div class="color-swatch" style="background-color: #FFFFFF;"><span>#FFFFFF<br>Input BG</span></div>
+            <div class="color-swatch" style="background-color: #007ACC;"><span>#007ACC<br>Focus Border</span></div>
+            <div class="color-swatch" style="background-color: #EEEEEE;"><span>#EEEEEE<br>Line Highlight</span></div>
+            <div class="color-swatch" style="background-color: #ADD6FF;"><span>#ADD6FF<br>Selection BG</span></div>
+            <div class="color-swatch" style="background-color: #6A737D;"><span>#6A737D<br>Comment</span></div>
+            <div class="color-swatch" style="background-color: #005CC5;"><span>#005CC5<br>Keyword</span></div>
+            <div class="color-swatch" style="background-color: #D73A49;"><span>#D73A49<br>String</span></div>
+            <div class="color-swatch" style="background-color: #6F42C1;"><span>#6F42C1<br>Variable</span></div>
+            <div class="color-swatch" style="background-color: #E36209;"><span>#E36209<br>Number</span></div>
+        </div>
+
+        <h3>Dark Mode Colors</h3>
+        <div class="color-swatch-container">
+            <div class="color-swatch" style="background-color: #202432;"><span>#202432<br>Editor BG</span></div>
+            <div class="color-swatch" style="background-color: #d3d0c8;"><span>#d3d0c8<br>Default Text</span></div>
+            <div class="color-swatch" style="background-color: #181b25;"><span>#181b25<br>Activity Bar BG</span></div>
+            <div class="color-swatch" style="background-color: #1c1f2b;"><span>#1c1f2b<br>Side Bar BG</span></div>
+            <div class="color-swatch" style="background-color: #001432;"><span>#001432<br>Status Bar BG</span></div>
+            <div class="color-swatch" style="background-color: #002daa;"><span>#002daa<br>Button BG</span></div>
+            <div class="color-swatch" style="background-color: #202432;"><span>#202432<br>Input BG</span></div>
+            <div class="color-swatch" style="background-color: #165fb3;"><span>#165fb3<br>Focus Border</span></div>
+            <div class="color-swatch" style="background-color: #ffffff33;"><span>#ffffff33<br>Line Highlight</span></div>
+            <div class="color-swatch" style="background-color: #00000055;"><span>#00000055<br>Selection BG</span></div>
+            <div class="color-swatch" style="background-color: #747369;"><span>#747369<br>Comment</span></div>
+            <div class="color-swatch" style="background-color: #22A8CD;"><span>#22A8CD<br>Keyword</span></div>
+            <div class="color-swatch" style="background-color: #FE5C7B;"><span>#FE5C7B<br>String</span></div>
+            <div class="color-swatch" style="background-color: #A97BFF;"><span>#A97BFF<br>Variable</span></div>
+            <div class="color-swatch" style="background-color: #F99157;"><span>#F99157<br>Number</span></div>
+        </div>
+    </section>
+
+    <section id="typography">
+        <h2>Typography</h2>
+        <p>Huebris theme uses standard system fonts for UI elements and a common monospace font for the editor. Ensure your VSCode is configured to use your preferred coding font.</p>
+        <div class="font-example">
+            <h4>Example Heading 4</h4>
+            <p>This is an example paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </section>
+
+    <section id="design-elements">
+        <h2>Key Design Elements</h2>
+        <p>Huebris provides distinct styling for:</p>
+        <ul>
+            <li>Editor Background &amp; Foreground</li>
+            <li>Selection Highlights</li>
+            <li>Active Line Highlighting</li>
+            <li>Activity Bar, Status Bar, and Side Bar</li>
+            <li>Tabs (Active and Inactive)</li>
+            <li>UI Borders (Focus, Input, etc.)</li>
+            <li>Syntax tokens: Keywords, Strings, Comments, Variables, Functions, Numbers, Tags.</li>
+        </ul>
+    </section>
+
+    <section id="vscode-examples">
+        <h2>VSCode Examples</h2>
+        <div class="screenshot-group">
+            <div class="screenshot-container light-mode-screenshot">
+                <h3>Editor (Light Mode)</h3>
+                <img src="assets/vscode-editor-light.png" alt="VSCode Editor - Huebris Light Theme">
+                <h3>Explorer (Light Mode)</h3>
+                <img src="assets/vscode-explorer-light.png" alt="VSCode Explorer - Huebris Light Theme">
+            </div>
+            <div class="screenshot-container dark-mode-screenshot" style="display:none;">
+                <h3>Editor (Dark Mode)</h3>
+                <img src="assets/vscode-editor-dark.png" alt="VSCode Editor - Huebris Dark Theme">
+                <h3>Explorer (Dark Mode)</h3>
+                <img src="assets/vscode-explorer-dark.png" alt="VSCode Explorer - Huebris Dark Theme">
+            </div>
+        </div>
+    </section>
+
+    <section id="syntax-highlighting">
+        <h2>Code Syntax Highlighting</h2>
+        <div class="code-example-container">
+            <h3>JavaScript</h3>
+            <pre><code class="language-javascript">/*
+ * Simple JavaScript Example
+ */
+function greet(name) {
+  // Using a template literal
+  const message = `Hello, ${name}!`;
+  console.log(message);
+  return message;
+}
+
+let person = "Huebris User";
+greet(person); // Output: Hello, Huebris User!
+
+// Example of a loop
+for (let i = 0; i < 3; i++) {
+  console.log(`Iteration ${i}`);
+}
+
+// Arrow function
+const add = (a, b) => a + b;
+console.log(`2 + 3 = ${add(2, 3)}`);</code></pre>
+            <h3>Python</h3>
+            <pre><code class="language-python"># Simple Python Example
+class Greeter:
+    def __init__(self, name):
+        self.name = name  # Instance variable
+
+    def greet(self, loud=False):
+        if loud:
+            print(f'HELLO, {self.name.upper()}!')
+        else:
+            print(f'Hello, {self.name}')
+
+# Create an instance
+g = Greeter("Huebris Coder")
+g.greet()
+g.greet(loud=True)
+
+# List comprehension
+numbers = [x * x for x in range(1, 6)] # [1, 4, 9, 16, 25]
+print(numbers)</code></pre>
+            <h3>Java</h3>
+            <pre><code class="language-java">/**
+ * Simple Java Example
+ */
+public class Greeter {
+    private String name; // Instance variable
+
+    public Greeter(String name) {
+        this.name = name;
+    }
+
+    public void greet() {
+        System.out.println("Hello, " + this.name + "!");
+    }
+
+    public static void main(String[] args) {
+        Greeter greeter = new Greeter("Huebris Developer");
+        greeter.greet(); // Output: Hello, Huebris Developer!
+
+        // Example of a loop
+        for (int i = 0; i < 3; i++) {
+            System.out.println("Iteration: " + i);
+        }
+    }
+}</code></pre>
+            <h3>C++</h3>
+            <pre><code class="language-cpp">// Simple C++ Example
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+#include &lt;vector&gt;
+
+class Greeter {
+public:
+    Greeter(std::string name) : name(name) {}
+
+    void greet() {
+        std::cout &lt;&lt; "Hello, " &lt;&lt; name &lt;&lt; "!" &lt;&lt; std::endl;
+    }
+private:
+    std::string name;
+};
+
+int main() {
+    Greeter greeter("Huebris Programmer");
+    greeter.greet();
+
+    std::vector&lt;int&gt; numbers;
+    for (int i = 1; i &lt;= 5; ++i) {
+        numbers.push_back(i * i);
+    }
+    // numbers contains {1, 4, 9, 16, 25}
+    for (int num : numbers) {
+        std::cout &lt;&lt; num &lt;&lt; " ";
+    }
+    std::cout &lt;&lt; std::endl;
+    return 0;
+}</code></pre>
+            <h3>HTML</h3>
+            <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Huebris Page&lt;/title&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Welcome to Huebris&lt;/h1&gt;
+    &lt;/header&gt;
+
+    &lt;!-- This is an HTML comment --&gt;
+    &lt;section id="main-content"&gt;
+        &lt;p&gt;This is a paragraph with &lt;strong&gt;strong&lt;/strong&gt; text and an &lt;a href="#"&gt;example link&lt;/a&gt;.&lt;/p&gt;
+        &lt;ul&gt;
+            &lt;li&gt;List item 1&lt;/li&gt;
+            &lt;li&gt;List item 2&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/section&gt;
+
+    &lt;script src="script.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            <h3>CSS</h3>
+            <pre><code class="language-css">/* Simple CSS Example */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color-light); /* Using CSS Variable */
+    color: var(--text-color-light);
+    line-height: 1.6;
+}
+
+header {
+    background-color: #007acc;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+#main-content {
+    padding: 20px;
+}
+
+/* Class selector */
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+/* ID selector */
+#footer {
+    margin-top: 30px;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}</code></pre>
+        </div>
+    </section>
+
+    <section id="toggle-mode">
+        <h2>Toggle Light/Dark Mode</h2>
+        <button id="theme-toggle-button">Toggle Mode</button> <!-- Changed ID here -->
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Huebris Theme</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
