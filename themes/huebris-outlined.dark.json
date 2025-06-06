@@ -1,21 +1,27 @@
 {
 	"$schema": "color-theme.schema.json",
-	"extends": "./huebris-outlined.json",
-	"name": "Huebris Dark Mode: Outlined",
 	"version": "0.1.0",
-	"type": { "dark": true, "light": false },
+	"name": "Huebris Outlined Dark",
+	"type": "dark",
 	"colors": {
-		// VS Dark ///* Border Color */
-		"editorGroup.border": "#1591ffaa",
-		"focusBorder": "#165fb3",
-		"inputOption.activeBorder": "#0d2c5a",
+		"activityBar.border": "#666666",
+		"editorGroup.border": "#666666",
+		"editorGroupHeader.tabsBorder": "#666666",
+		"panel.border": "#666666",
+		"sideBar.border": "#666666",
+		"tab.border": "#666666",
+		"tab.unfocusedActiveBorder": "#666666",
+		"input.border": "#666666",
+		"dropdown.border": "#666666",
+		"button.border": "#666666",
+		"focusBorder": "#2F81F7",
+		"inputOption.activeBorder": "#2F81F7",
 		"inputValidation.errorBorder": "#e31846",
 		"inputValidation.infoBorder": "#0098c9",
+		"inputValidation.warningBorder": "#ffaa41",
 		"peekView.border": "#3572ff",
-		"pickerGroup.border": "#0e377b",
+		"pickerGroup.border": "#666666",
 		"tab.activeBorder": "#1591ff",
-
-		// VS Dark ///* Text Color */
 		"activityBar.foreground": "#cdcdcd",
 		"editor.foreground": "#d3d0c8",
 		"editorCursor.foreground": "#ffffff",
@@ -25,8 +31,6 @@
 		"list.activeSelectionForeground": "#ffffffaa",
 		"list.highlightForeground": "#0f96ff",
 		"pickerGroup.foreground": "#2fb8ff",
-
-		// VS Dark ///* Background Color */
 		"activityBar.background": "#181b25",
 		"activityBarBadge.background": "#004597",
 		"badge.background": "#165fb3aa",
@@ -45,7 +49,6 @@
 		"inputValidation.errorBackground": "#e31846ee",
 		"inputValidation.infoBackground": "#0071b7",
 		"inputValidation.warningBackground": "#e97f00",
-		"inputValidation.warningBorder": "#ffaa41",
 		"list.activeSelectionBackground": "#00000077",
 		"list.focusBackground": "#00000055",
 		"list.hoverBackground": "#00000033",
@@ -65,7 +68,7 @@
 		"statusBar.noFolderBackground": "#1b6fff",
 		"tab.activeBackground": "#202432",
 		"tab.inactiveBackground": "#1e2228",
-		"titleBar.activeBackground": "#191c28",
+		"titleBar.activeBackground": "#191c28"
 	},
 	"tokenColors": [
 		{
@@ -171,18 +174,6 @@
 			}
 		},
 		{
-			"scope": "none",
-			"settings": {
-				"foreground": "#F99157"
-			}
-		},
-		{
-			"scope": "none",
-			"settings": {
-				"foreground": "#F99157"
-			}
-		},
-		{
 			"scope": "constant",
 			"settings": {
 				"foreground": "#F99157"
@@ -216,12 +207,6 @@
 			"scope": "meta.selector",
 			"settings": {
 				"foreground": "#CC99CC"
-			}
-		},
-		{
-			"scope": "none",
-			"settings": {
-				"foreground": "#F99157"
 			}
 		},
 		{
@@ -424,4 +409,3 @@
 		}
 	]
 }
-
