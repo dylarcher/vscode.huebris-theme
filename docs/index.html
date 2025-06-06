@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&family=Roboto+Mono:wght@400;500&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- 
+    <!--
         Chosen Palette: Calm Neutral Harmony (Custom)
         - Background: #F8F9FA (Off-white)
         - Text: #212529 (Dark Gray)
@@ -19,10 +19,10 @@
         - Error: #FA5252 (Red)
         - Warning: #FAB005 (Amber)
     -->
-    <!-- 
+    <!--
         Application Structure Plan: The application is designed as an interactive guide, diverging from the report's linear structure. It uses a sticky top navigation for easy access to key thematic sections: "Fundamentals," "The Palette," "Theme Lab," "Accessibility," and "Workflow." This modular, task-oriented design allows users to explore concepts based on interest rather than chapter order. The centerpiece is the "Theme Lab," a simulator that provides a hands-on experience, which is more effective for learning than static descriptions. This structure prioritizes user engagement, exploration, and practical understanding.
     -->
-    <!-- 
+    <!--
         Visualization & Content Choices:
         - Report Info: Theme Anatomy -> Goal: Organize -> Viz/Method: Interactive HTML cards -> Interaction: Hover effect -> Justification: More engaging than a plain list -> Library/Method: HTML/Tailwind.
         - Report Info: Core Color Palette (Table 1) -> Goal: Inform & Interact -> Viz/Method: Interactive grid with a dynamic contrast checker tool -> Interaction: Click colors, select from dropdowns to test contrast -> Justification: Turns a static table into a practical utility -> Library/Method: HTML/JS.
@@ -30,7 +30,7 @@
         - Report Info: WCAG Contrast Ratios (Table 3) -> Goal: Compare & Inform -> Viz/Method: Bar Chart -> Interaction: Hover for tooltips -> Justification: Makes numerical data visually comparable -> Library/Method: Chart.js/Canvas.
         - Report Info: Development Workflow -> Goal: Organize -> Viz/Method: HTML/CSS Flowchart -> Interaction: Static -> Justification: Clearer process visualization than text -> Library/Method: HTML/Tailwind with Unicode icons.
     -->
-    <!-- 
+    <!--
         CONFIRMATION: NO SVG graphics used. NO Mermaid JS used.
     -->
     <style>
@@ -73,7 +73,7 @@
             --error: #F85149;
             --warning: #DBAB09;
         }
-        
+
         html.dimmed-theme {
             --bg-primary: #22272e;
             --bg-secondary: #2d333b;
@@ -128,10 +128,10 @@
             --warning: #FFA500;
         }
 
-        body { 
-            font-family: var(--font-body); 
+        body {
+            font-family: var(--font-body);
             font-size: var(--base-font-size);
-            background-color: var(--bg-primary); 
+            background-color: var(--bg-primary);
             color: var(--text-primary);
             transition: background-color 0.3s ease, color 0.3s ease;
         }
@@ -139,7 +139,7 @@
         .sticky-nav { position: sticky; top: 0; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
         .chart-container { position: relative; width: 100%; max-width: 800px; margin-left: auto; margin-right: auto; height: 300px; max-height: 40vh; }
         @media (min-width: 768px) { .chart-container { height: 350px; } }
-        
+
         main {
             padding-top: calc(var(--base-spacing-unit) * 2);
             padding-bottom: calc(var(--base-spacing-unit) * 3);
@@ -156,7 +156,7 @@
             transition: border-color 0.3s ease;
             padding: calc(var(--base-spacing-unit) * 1.5);
         }
-        
+
         html.borders-hidden .themed-card,
         html.borders-hidden .themed-card:hover {
             border-color: transparent;
@@ -175,19 +175,19 @@
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
-        
+
         button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
             outline: 2px solid var(--accent-primary);
             outline-offset: 2px;
             border-radius: 2px;
         }
-        
+
         input[type="range"] {
             -webkit-appearance: none; appearance: none;
             width: 100%; height: 8px;
             background: var(--border-default); border-radius: 5px; outline: none;
         }
-        
+
         input[type="range"]::-webkit-slider-thumb {
             -webkit-appearance: none; appearance: none;
             width: 20px; height: 20px;
@@ -210,17 +210,8 @@
                 <a href="https://github.com/dylarcher/vscode.huebris-theme" target="_blank" rel="noopener noreferrer" class="p-2 rounded-md hover:bg-secondary text-secondary hover:text-primary transition-colors" aria-label="View on GitHub">
                     <!--span class="font-bold text-xl"-->
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0"
-                      viewBox="0 0 97.6 96" width="18" height="18" style="enable-background:new 0 0 97.6 96;" xml:space="preserve">
-                      <style type="text/css">
-                        .github {
-                          fill: var(--_color, #1b1f24);
-                    
-                          @media (prefers-color-scheme: dark) {
-                            --_color: #fff;
-                          }
-                        }
-                      </style>
-                      <path class="github" d="M48.9,0C21.8,0,0,22,0,49.2C0,71,14,89.4,33.4,95.9c2.4,0.5,3.3-1.1,3.3-2.4c0-1.1-0.1-5.1-0.1-9.1
+                      viewBox="0 0 97.6 96" width="18" height="18" fill="currentcolor" style="enable-background:new 0 0 97.6 96;" xml:space="preserve">
+                      <path d="M48.9,0C21.8,0,0,22,0,49.2C0,71,14,89.4,33.4,95.9c2.4,0.5,3.3-1.1,3.3-2.4c0-1.1-0.1-5.1-0.1-9.1
                       c-13.6,2.9-16.4-5.9-16.4-5.9c-2.2-5.7-5.4-7.2-5.4-7.2c-4.4-3,0.3-3,0.3-3c4.9,0.3,7.5,5.1,7.5,5.1c4.4,7.5,11.4,5.4,14.2,4.1
                       c0.4-3.2,1.7-5.4,3.1-6.6c-10.8-1.1-22.2-5.4-22.2-24.3c0-5.4,1.9-9.8,5-13.2c-0.5-1.2-2.2-6.3,0.5-13c0,0,4.1-1.3,13.4,5.1
                       c3.9-1.1,8.1-1.6,12.2-1.6s8.3,0.6,12.2,1.6c9.3-6.4,13.4-5.1,13.4-5.1c2.7,6.8,1,11.8,0.5,13c3.2,3.4,5,7.8,5,13.2
@@ -252,13 +243,13 @@
             </div>
         </div>
     </header>
-    
+
     <main class="container mx-auto px-4">
-        
+
         <section id="fundamentals" aria-labelledby="fundamentals-heading">
             <h2 id="fundamentals-heading" class="text-4xl md:text-5xl font-extrabold text-center mb-4">The Interactive Guide to <span class="text-[color:var(--accent-primary)]">VS Code Theming</span></h2>
             <p class="text-lg md:text-xl text-center text-secondary max-w-3xl mx-auto section-intro">An exploration of the principles, tools, and accessibility standards behind creating high-quality, multi-variation themes for developers.</p>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-3 gap-[var(--base-spacing-unit)] text-center">
                 <div class="themed-card bg-secondary p-6 rounded-xl border border-border-default hover:border-accent-primary transition-all">
                     <h3 class="text-xl font-bold mb-2 text-[color:var(--accent-primary)]">UI Colors</h3>
@@ -307,7 +298,7 @@
                 </div>
             </div>
         </section>
-        
+
         <section id="ai-assistant" aria-labelledby="ai-heading">
             <h2 id="ai-heading" class="text-3xl font-bold text-center mb-4 text-[color:var(--accent-primary)]">✨ AI Theme Assistant</h2>
             <p class="text-lg text-center text-secondary max-w-3xl mx-auto section-intro">Stuck for ideas? Describe a theme concept in plain language, and the AI will generate a starting palette for you.</p>
@@ -392,7 +383,7 @@
                 </div>
             </div>
         </section>
-        
+
         <section id="snippets" aria-labelledby="snippets-heading">
             <h2 id="snippets-heading" class="text-3xl font-bold text-center mb-4 text-[color:var(--accent-primary)]">Code Snippet Showcase</h2>
             <p class="text-lg text-center text-secondary max-w-3xl mx-auto section-intro">See how syntax highlighting looks with the current theme across different languages.</p>
@@ -464,11 +455,11 @@
     - <span style="color: var(--syntax-attr)">uses</span>: <span style="color: var(--syntax-string)">actions/checkout@v2</span></code></pre></div>
                     <div id="panel-svg" role="tabpanel" class="snippet-panel hidden"><pre class="font-code text-sm"><code><span style="color: var(--syntax-comment)">&lt;!-- A simple circle --&gt;</span>
 &lt;<span style="color: var(--syntax-tag)">svg</span> <span style="color: var(--syntax-attr)">width</span>=<span style="color: var(--syntax-string)">"100"</span> <span style="color: var(--syntax-attr)">height</span>=<span style="color: var(--syntax-string)">"100"</span>&gt;
-  &lt;<span style="color: var(--syntax-tag)">circle</span> 
-    <span style="color: var(--syntax-attr)">cx</span>=<span style="color: var(--syntax-string)">"50"</span> <span style="color: var(--syntax-attr)">cy</span>=<span style="color: var(--syntax-string)">"50"</span> <span style="color: var(--syntax-attr)">r</span>=<span style="color: var(--syntax-string)">"40"</span> 
-    <span style="color: var(--syntax-attr)">stroke</span>=<span style="color: var(--syntax-string)">"var(--text-secondary)"</span> 
-    <span style="color: var(--syntax-attr)">stroke-width</span>=<span style="color: var(--syntax-string)">"4"</span> 
-    <span style="color: var(--syntax-attr)">fill</span>=<span style="color: var(--syntax-string)">"var(--accent-primary)"</span> 
+  &lt;<span style="color: var(--syntax-tag)">circle</span>
+    <span style="color: var(--syntax-attr)">cx</span>=<span style="color: var(--syntax-string)">"50"</span> <span style="color: var(--syntax-attr)">cy</span>=<span style="color: var(--syntax-string)">"50"</span> <span style="color: var(--syntax-attr)">r</span>=<span style="color: var(--syntax-string)">"40"</span>
+    <span style="color: var(--syntax-attr)">stroke</span>=<span style="color: var(--syntax-string)">"var(--text-secondary)"</span>
+    <span style="color: var(--syntax-attr)">stroke-width</span>=<span style="color: var(--syntax-string)">"4"</span>
+    <span style="color: var(--syntax-attr)">fill</span>=<span style="color: var(--syntax-string)">"var(--accent-primary)"</span>
   /&gt;
 &lt;/<span style="color: var(--syntax-tag)">svg</span>&gt;</code></pre></div>
                 </div>
@@ -509,7 +500,7 @@
                 </div>
             </div>
         </section>
-        
+
         <section id="installation" class="scroll-mt-24" aria-labelledby="installation-heading">
             <h2 id="installation-heading" class="text-3xl font-bold text-center mb-4 text-[color:var(--accent-primary)]">Installation & Activation</h2>
             <p class="text-lg text-center text-secondary max-w-3xl mx-auto section-intro">Get started with your new theme in just a few steps. Follow the guide for your preferred installation method.</p>
@@ -559,13 +550,13 @@
 
         const bgGrid = document.getElementById('bg-selector-grid');
         const fgList = document.getElementById('fg-selector-list');
-        
+
         let selectedBgColor = palette['Light BG'];
         let selectedFgColor = palette['Light FG'];
 
         function hexToRgb(hex) {
             let r = 0, g = 0, b = 0;
-            if (hex.length == 4) { r = parseInt(hex[1] + hex[1], 16); g = parseInt(hex[2] + hex[2], 16); b = parseInt(hex[3] + hex[3], 16); } 
+            if (hex.length == 4) { r = parseInt(hex[1] + hex[1], 16); g = parseInt(hex[2] + hex[2], 16); b = parseInt(hex[3] + hex[3], 16); }
             else if (hex.length == 7) { r = parseInt(hex[1] + hex[2], 16); g = parseInt(hex[3] + hex[4], 16); b = parseInt(hex[5] + hex[6], 16); }
             return [r,g,b];
         }
@@ -579,7 +570,7 @@
             const lum1 = getLuminance(fg); const lum2 = getLuminance(bg);
             return (Math.max(lum1, lum2) + 0.05) / (Math.min(lum1, lum2) + 0.05);
         }
-        
+
         function populateColorSelectors() {
             bgGrid.innerHTML = '';
             fgList.innerHTML = '';
@@ -598,7 +589,7 @@
                     updateContrastChecker();
                 });
                 bgGrid.appendChild(swatch);
-                
+
                 const textSample = document.createElement('button');
                 textSample.className = 'p-1 rounded-md cursor-pointer font-semibold text-center transition-all w-full focus:outline-none';
                 textSample.style.color = color;
@@ -610,7 +601,7 @@
                 textSample.textContent = name;
                 textSample.dataset.color = color;
                 textSample.setAttribute('aria-label', `Set foreground to ${name}`);
-                
+
                 textSample.addEventListener('click', () => {
                     selectedFgColor = color;
                     document.querySelectorAll('#fg-selector-list button').forEach(p => p.style.textDecoration = 'none');
@@ -653,7 +644,7 @@
             const errorColor = style.getPropertyValue('--error').trim();
 
             if (wcagChartInstance) wcagChartInstance.destroy();
-            
+
             wcagChartInstance = new Chart(ctx, {
                 type: 'bar',
                 data: {
@@ -674,7 +665,7 @@
                 }
             });
         }
-        
+
         const html = document.documentElement;
         const themeControls = document.getElementById('theme-controls');
         const borderToggleButton = document.getElementById('border-toggle-btn');
@@ -710,7 +701,7 @@
                 const theme = btn.dataset.theme;
                 themeClassNames.forEach(cls => html.classList.remove(cls));
                 html.classList.add(`${theme}-theme`);
-                
+
                 setTimeout(() => { // allow CSS variables to update
                     applyActiveStyles(btn);
                     createOrUpdateWcagChart();
@@ -719,7 +710,7 @@
                 }, 10);
             });
         });
-        
+
         // --- Customizer Controls ---
         const customizerInputs = {
             accent: document.getElementById('accent-color-picker'),
@@ -745,7 +736,7 @@
                 fontSize: style.getPropertyValue('--base-font-size').trim(),
                 spacing: style.getPropertyValue('--base-spacing-unit').trim()
             };
-            
+
             customizerInputs.accent.value = currentThemeDefaults.accent;
             customizerInputs.bg.value = currentThemeDefaults.bg;
             customizerInputs.text.value = currentThemeDefaults.text;
@@ -765,7 +756,7 @@
             html.style.setProperty('--font-body', currentThemeDefaults.fontFamily);
             html.style.setProperty('--base-font-size', currentThemeDefaults.fontSize);
             html.style.setProperty('--base-spacing-unit', currentThemeDefaults.spacing);
-            
+
             captureAndSetDefaults();
             applyActiveStyles(themeControls.querySelector('button[aria-checked="true"]'));
         });
@@ -789,7 +780,7 @@
             html.style.setProperty('--base-spacing-unit', size);
             customizerValueDisplays.spacing.textContent = `${e.target.value}px`;
         });
-        
+
         // --- Export Logic ---
         const exportBtn = document.getElementById('export-theme-btn');
         const exportModal = document.getElementById('export-modal');
@@ -851,19 +842,19 @@
             copyJsonBtn.textContent = 'Copied!';
             setTimeout(() => { copyJsonBtn.textContent = 'Copy'; }, 2000);
         });
-        
+
         // --- Gemini API Integration ---
         const aiGenerateBtn = document.getElementById('ai-generate-btn');
         const suggestColorsBtn = document.getElementById('suggest-colors-btn');
         const aiPrompt = document.getElementById('ai-prompt');
         const aiResultsContainer = document.getElementById('ai-results');
         const aiSpinner = document.getElementById('ai-spinner');
-        const apiKey = ""; 
+        const apiKey = "";
 
         async function callGemini(prompt, schema) {
             aiSpinner.style.display = 'block';
             aiResultsContainer.innerHTML = '';
-            
+
             const payload = {
                 contents: [{ role: "user", parts: [{ text: prompt }] }],
                 generationConfig: {
@@ -927,7 +918,7 @@
 
         function displayAIPalette(generatedPalette) {
             aiResultsContainer.innerHTML = '';
-            
+
             const newPalette = {};
             Object.entries(generatedPalette).forEach(([name, color]) => {
                 newPalette[`AI ${name}`] = color.toUpperCase();
@@ -959,7 +950,7 @@
         const snippetPanels = document.querySelectorAll('.snippet-panel');
         snippetTabs.addEventListener('click', (e) => {
             if (e.target.role !== 'tab') return;
-            
+
             snippetTabs.querySelectorAll('[role="tab"]').forEach(tab => {
                 tab.setAttribute('aria-selected', 'false');
                 tab.style.borderColor = 'transparent';
@@ -969,28 +960,28 @@
             e.target.setAttribute('aria-selected', 'true');
             e.target.style.borderColor = 'var(--accent-primary)';
             e.target.style.color = 'var(--text-primary)';
-            
+
             snippetPanels.forEach(panel => {
                 panel.classList.add('hidden');
             });
-            
+
             const targetPanel = document.getElementById(e.target.getAttribute('aria-controls'));
             if (targetPanel) {
                 targetPanel.classList.remove('hidden');
             }
         });
-        
+
         // --- Nav Menu Logic ---
         const navToggleBtn = document.getElementById('nav-toggle-btn');
         const navMenu = document.getElementById('nav-menu');
-        
+
         navToggleBtn.addEventListener('click', (e) => {
             const isExpanded = navToggleBtn.getAttribute('aria-expanded') === 'true';
             navToggleBtn.setAttribute('aria-expanded', !isExpanded);
             navMenu.classList.toggle('hidden');
             e.stopPropagation();
         });
-        
+
         document.addEventListener('click', (e) => {
              if (!navMenu.contains(e.target) && !navToggleBtn.contains(e.target)) {
                 navToggleBtn.setAttribute('aria-expanded', 'false');
