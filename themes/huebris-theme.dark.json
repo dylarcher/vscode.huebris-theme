@@ -5,7 +5,6 @@
 	"version": "0.1.0",
 	"type": { "dark": true, "light": false },
 	"colors": {
-		// VS Dark ///* Border Color */
 		"editorGroup.border": "#1591ffaa",
 		"focusBorder": "#165fb3",
 		"inputOption.activeBorder": "#0d2c5a",
@@ -14,8 +13,6 @@
 		"peekView.border": "#3572ff",
 		"pickerGroup.border": "#0e377b",
 		"tab.activeBorder": "#1591ff",
-
-		// VS Dark ///* Text Color */
 		"activityBar.foreground": "#cdcdcd",
 		"editor.foreground": "#d3d0c8",
 		"editorCursor.foreground": "#ffffff",
@@ -25,8 +22,6 @@
 		"list.activeSelectionForeground": "#ffffffaa",
 		"list.highlightForeground": "#0f96ff",
 		"pickerGroup.foreground": "#2fb8ff",
-
-		// VS Dark ///* Background Color */
 		"activityBar.background": "#181b25",
 		"activityBarBadge.background": "#004597",
 		"badge.background": "#165fb3aa",
