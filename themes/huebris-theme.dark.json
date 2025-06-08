@@ -60,7 +60,7 @@
 		"statusBar.noFolderBackground": "#1b6fff",
 		"tab.activeBackground": "#202432",
 		"tab.inactiveBackground": "#1e2228",
-		"titleBar.activeBackground": "#191c28",
+		"titleBar.activeBackground": "#191c28"
 	},
 	"tokenColors": [
 		{
@@ -419,4 +419,3 @@
 		}
 	]
 }
-
