@@ -1,63 +1,103 @@
 {
+	"name": "vscode.huebris-theme",
+	"displayName": "Huebris Theme",
+	"description": "Confidently enhancing VSCode themes with refreshing color schemes.",
+	"version": "0.1.0",
 	"author": "Dylan Archer <dylarcher@gmail.com>",
-	"bugs": {
-		"email": "dylarcher@zohomail.com"                                 ,
-		"url"  : "https://github.com/darcher-/vscode.huebris-theme/issues"
+	"license": "MIT",
+	"engines": {
+		"vscode": ">= 1.90",
+		"node": ">=20.19.2",
+		"npm": ">=10.8.2"
 	},
-	"categories": [ "Themes" ],
+	"keywords": [
+		"color",
+		"dark",
+		"editor",
+		"high contrast",
+		"high-contrast",
+		"huebris",
+		"light",
+		"lite",
+		"scheme",
+		"theme",
+		"vscode",
+		"darkmode"
+	],
+	"categories": [
+		"Themes"
+	],
+	"bugs": {
+		"email": "dylarcher@zohomail.com",
+		"url": "https://github.com/darcher-/vscode.huebris-theme/issues"
+	},
+	"repository": "github:darcher-/vscode.huebris-theme",
+	"scripts": {
+		"lint": "echo \"lint script not yet configured\"",
+		"format": "echo \"format script not yet configured\""
+	},
 	"contributes": {
 		"themes": [
 			{
-				"label"  : "Huebris Theme"           ,
-				"path"   : "themes/huebris-flat.json",
+				"label": "Huebris Theme",
+				"path": "themes/huebris-flat.json",
 				"uiTheme": "vs"
 			},
 			{
-				"label"  : "Huebris Theme: High-Contrast",
-				"path"   : "themes/huebris-contrast.json",
+				"label": "Huebris Theme: High-Contrast",
+				"path": "themes/huebris-contrast.json",
 				"uiTheme": "hc-light"
 			},
 			{
-				"label"  : "Huebris Theme: Colorblind"     ,
-				"path"   : "themes/huebris-colorblind.json",
+				"label": "Huebris Theme: Colorblind",
+				"path": "themes/huebris-colorblind.json",
 				"uiTheme": "hc-light"
 			},
 			{
-				"label"  : "Huebris Theme: Outlined"     ,
-				"path"   : "themes/huebris-outlined.json",
+				"label": "Huebris Theme: Outlined",
+				"path": "themes/huebris-outlined.json",
 				"uiTheme": "vs"
 			},
 			{
-				"label"  : "Huebris Dark Mode"            ,
-				"path"   : "themes/huebris-flat.dark.json",
+				"label": "Huebris Dark Mode",
+				"path": "themes/huebris-flat.dark.json",
 				"uiTheme": "vs-dark"
 			},
 			{
-				"label"  : "Huebris Dark Mode: High-Contrast" ,
-				"path"   : "themes/huebris-contrast.dark.json",
+				"label": "Huebris Dark Mode: High-Contrast",
+				"path": "themes/huebris-contrast.dark.json",
 				"uiTheme": "hc-black"
 			},
 			{
-				"label"  : "Huebris Dark Mode: Colorblind"      ,
-				"path"   : "themes/huebris-colorblind.dark.json",
+				"label": "Huebris Dark Mode: Colorblind",
+				"path": "themes/huebris-colorblind.dark.json",
 				"uiTheme": "hc-black"
 			},
 			{
-				"label"  : "Huebris Dark Mode: Outlined"      ,
-				"path"   : "themes/huebris-outlined.dark.json",
+				"label": "Huebris Dark Mode: Outlined",
+				"path": "themes/huebris-outlined.dark.json",
 				"uiTheme": "vs-dark"
 			}
 		]
 	},
-	"description": "Confidently enhancing VSCode themes with refreshing color schemes.",
-	"displayName": "Huebris Theme",
-	"engines": { "vscode": ">= 1.90" },
-	"keywords": [
-		"color"        , "dark"         , "editor"       , "high contrast",
-		"high-contrast", "huebris"      , "light"        , "lite"         ,
-		"scheme"       , "theme"        , "vscode"       , "darkmode"
+	"files": [
+		"themes/",
+		"LICENSE",
+		"README.md",
+		"CHANGELOG.md",
+		"package.json"
 	],
-	"name": "vscode.huebris-theme",
-	"repository": "github:darcher-/vscode.huebris-theme",
-	"version": "echo $npm_package_version"
+	"directories": {
+		".github": ".github",
+		"dist": "dist",
+		"docs": "docs",
+		"node_modules": "node_modules",
+		"src": "src",
+		"test": "test"
+	},
+	"devDependencies": {
+		"@types/node": "22.15.30",
+		"eslint": "^8.0.0",
+		"prettier": "^2.0.0"
+	}
 }

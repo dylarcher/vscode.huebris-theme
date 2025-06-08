@@ -1,4 +1,12 @@
 
+# Project Title
+
+A brief (1-2 sentence) overview of what your project does and its main purpose.
+
+## How to Contribute
+
+Contributions are welcome! Please see our [Contributing Guidelines](.github/CONTRIBUTING.md) for more details on how to get started.
+
 # Implementing Comprehensive and Accessible VSCode Theme Variations: A Developer's Guide
 
 ## I. Introduction
