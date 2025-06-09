@@ -31,16 +31,14 @@
 		"email": "dylarcher@zohomail.com",
 		"url": "https://github.com/darcher-/vscode.huebris-theme/issues"
 	},
-	"repository": "github:darcher-/vscode.huebris-theme",
-	"scripts": {
-		"lint": "echo \"lint script not yet configured\"",
-		"format": "echo \"format script not yet configured\""
-	},
+	"categories": [
+		"Themes"
+	],
 	"contributes": {
 		"themes": [
 			{
 				"label": "Huebris Theme",
-				"path": "themes/huebris-flat.json",
+				"path": "themes/huebris-theme.json",
 				"uiTheme": "vs"
 			},
 			{
@@ -60,7 +58,7 @@
 			},
 			{
 				"label": "Huebris Dark Mode",
-				"path": "themes/huebris-flat.dark.json",
+				"path": "themes/huebris-theme.dark.json",
 				"uiTheme": "vs-dark"
 			},
 			{
@@ -80,24 +78,38 @@
 			}
 		]
 	},
-	"files": [
-		"themes/",
-		"LICENSE",
-		"README.md",
-		"CHANGELOG.md",
-		"package.json"
+	"description": "Confidently enhancing VSCode themes with refreshing color schemes.",
+	"displayName": "Huebris Theme",
+	"engines": {
+		"vscode": ">= 1.90"
+	},
+	"keywords": [
+		"color",
+		"dark",
+		"editor",
+		"high contrast",
+		"high-contrast",
+		"huebris",
+		"light",
+		"lite",
+		"scheme",
+		"theme",
+		"vscode",
+		"darkmode"
 	],
-	"directories": {
-		".github": ".github",
-		"dist": "dist",
-		"docs": "docs",
-		"node_modules": "node_modules",
-		"src": "src",
-		"test": "test"
+	"name": "vscode.huebris-theme",
+	"repository": "github:darcher-/vscode.huebris-theme",
+	"version": "0.1.0",
+	"scripts": {
+		"vsix": "vsce package",
+		"test": "jest --coverage"
 	},
 	"devDependencies": {
-		"@types/node": "22.15.30",
-		"eslint": "^8.0.0",
-		"prettier": "^2.0.0"
-	}
+		"@types/jest": "^29.5.14",
+		"ajv": "^8.17.1",
+		"jest": "^29.7.0",
+		"ts-jest": "^29.3.4",
+		"vsce": "^2.15.0"
+	},
+	"license": "MIT"
 }
