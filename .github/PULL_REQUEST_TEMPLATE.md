@@ -1,7 +1,6 @@
 # Pull Request Overview
 
-Thank you for your contribution! To help us understand and review your changes e
-ffectively, please provide the following information.
+Thank you for your contribution! To help us understand and review your changes effectively, please provide the following information.
 
 ## Purpose of this Pull Request
 
