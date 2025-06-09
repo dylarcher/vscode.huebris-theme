@@ -13,8 +13,8 @@ paths-ignore:
   - build/**
   - coverage/**
   - test/coverage/**
-  - '/.min.js'
-  - '/.bundle.js'
+  - '**/*.min.js'
+  - '**/*.bundle.js'
 # Use security-focused query suites
 queries:
   - name: security-extended
