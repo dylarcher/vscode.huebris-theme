@@ -99,7 +99,7 @@
 	],
 	"name": "vscode.huebris-theme",
 	"repository": "github:darcher-/vscode.huebris-theme",
-	"version": "echo $npm_package_version",
+	"version": "0.1.0",
 	"scripts": {
 		"vsix": "vsce package",
 		"test": "jest --coverage"
