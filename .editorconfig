@@ -2,16 +2,19 @@
 
 root = true
 
-# universal
 [*]
-#? Linux/MacOS both use "Line Feed" (LF) & Windows uses "Carriage Return + Line Feed" (CRLF)
-#TODO test if `* text = auto` in .gitattributes is necessary
-end_of_line = auto #* due to OS variance set eol to "auto" universally
+indent_style = space
+indent_size = 2
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
 
 # documentation
 [*.mdx?]
 charset = utf-8
 max_line_length = 240
+end_of_line = lf
 insert_final_newline = false
 indent_style = space
 indent_size = 2
@@ -22,26 +25,29 @@ trim_trailing_whitespace = false
 [*.{json,jsonc,json5,jsonl}]
 charset = utf-8
 max_line_length = 120
+end_of_line = lf
 insert_final_newline = true
 indent_style = tab
 indent_size = 1
 tab_width = 2
-trim_trailing_whitespace = true
+trim_trailing_whitespace = false
 
 # configurations
 [*.{yaml,yml}]
 charset = utf-8
 max_line_length = 120
+end_of_line = lf
 insert_final_newline = false
 indent_style = space
 indent_size = 2
 tab_width = unset
-trim_trailing_whitespace = true
+trim_trailing_whitespace = false
 
 # schemes
 [*.{css,less,postcss,sass,scss,styl}]
 charset = utf-8
 max_line_length = 80
+end_of_line = lf
 insert_final_newline = true
 indent_style = tab
 indent_size = 1
@@ -52,6 +58,7 @@ trim_trailing_whitespace = true
 [*.{htm,html,htmx}]
 charset = utf-8
 max_line_length = 96
+end_of_line = lf
 insert_final_newline = false
 indent_style = space
 indent_size = 2
@@ -62,6 +69,7 @@ trim_trailing_whitespace = true
 [*.svg]
 charset = utf-8
 max_line_length = 96
+end_of_line = lf
 insert_final_newline = false
 indent_style = space
 indent_size = 2
@@ -72,8 +80,13 @@ trim_trailing_whitespace = true
 [*.{cjs,js,jsx,mjs,ts,tsx}]
 charset = utf-8
 max_line_length = 72
+end_of_line = lf
 insert_final_newline = true
 indent_style = tab
 indent_size = 1
 tab_width = 2
 trim_trailing_whitespace = true
+
+# Override for md and txt as per template general rule
+[*.{md,txt}]
+trim_trailing_whitespace = false
