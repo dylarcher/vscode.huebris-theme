@@ -1,5 +1,32 @@
 {
+	"name": "vscode.huebris-theme",
+	"displayName": "Huebris Theme",
+	"description": "Confidently enhancing VSCode themes with refreshing color schemes.",
+	"version": "0.1.0",
 	"author": "Dylan Archer <dylarcher@gmail.com>",
+	"license": "MIT",
+	"engines": {
+		"vscode": ">= 1.90",
+		"node": ">=20.19.2",
+		"npm": ">=10.8.2"
+	},
+	"keywords": [
+		"color",
+		"dark",
+		"editor",
+		"high contrast",
+		"high-contrast",
+		"huebris",
+		"light",
+		"lite",
+		"scheme",
+		"theme",
+		"vscode",
+		"darkmode"
+	],
+	"categories": [
+		"Themes"
+	],
 	"bugs": {
 		"email": "dylarcher@zohomail.com",
 		"url": "https://github.com/darcher-/vscode.huebris-theme/issues"
